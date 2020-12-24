@@ -42,6 +42,7 @@
   font-size: 4.3vw;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 .title00 span {
   display: inline-block; /*改行させない*/
