@@ -1,0 +1,101 @@
+/*共通CSS*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@font-face {
+  font-family: "Osaka";
+  src: url(../fonts/Osaka.ttf);
+}
+@font-face {
+  font-family: "Moon";
+  src: url(../fonts/MoonLight.otf);
+}
+@font-face {
+  font-family: "AppliMincho";
+  src: url(../fonts/AppliMincho.otf);
+}
+@font-face {
+  font-family: "HiraginoW1";
+  src: url(../fonts/Hiragino_W1.ttc);
+}
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/Futura-Medium-01.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/Futura-MediumItalic-02.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "HiraginoW4";
+  src: url(../fonts/Hiragino_W4.ttc);
+}
+@font-face {
+  font-family: "HiraginoW2";
+  src: url(../fonts/Hiragino_W2.ttc);
+}
+@font-face {
+  font-family: "HiraginoW7";
+  src: url(../fonts/Hiragino_W7.ttc);
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-01.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Light-08.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Medium-11.ttf);
+  font-weight: 500;
+}
+
+/*html { FOUTを防ぐためだが、もっと強引な実装をしたため不要。
+  visibility: hidden;
+}
+html.wf-active,
+html.loading-delay {
+  visibility: visible;
+}*/
+html a {
+  color: #4498ff;
+  transition: 0.3s;
+}
+html a:hover {
+  color: #9cceeb;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(84, 89, 90);
+  font-family: "a-otf-futo-go-b101-pr6n";
+}
+
+body {
+  background: rgb(255, 255, 255);
+  scrollbar-face-color: #000000;
+}
+::-webkit-scrollbar {
+  width: 0.7rem;
+  background: rgba(0, 0, 0, 0); /*スクロールバーの背景色*/
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 1rem;
+}
