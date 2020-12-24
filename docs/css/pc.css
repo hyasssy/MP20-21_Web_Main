@@ -352,13 +352,13 @@ th {
   align-items: left;
   overflow: hidden;
   margin-bottom: 0.6rem;
-  /* background-color: blue; */
 }
 .artist-box:hover {
   cursor: pointer;
   position: relative;
   bottom: -2px;
   right: -2px;
+  opacity: 0.7;
 }
 
 .artist-picture {
@@ -370,6 +370,10 @@ th {
   height: auto;
   z-index: -0.5;
 }
+/* .artist-picture img:hover {
+  opacity: 0.5;
+} */
+
 .artist-name{
   font-family: a-otf-midashi-go-mb31-pr6n, "HelveticaNeue", sans-serif;
   font-weight: 600;
@@ -382,6 +386,7 @@ th {
 
 #popup{
   width:90%;
+  height: 90%;
   display:none;
   position:fixed;
   top:50%;
