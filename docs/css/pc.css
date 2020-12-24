@@ -324,7 +324,7 @@
   margin-left: 0.6rem;
   margin-right: 0.4rem;
 }
-.artists a {
+/* .artists a {
   color: #000000;
   text-decoration: none;
 }
@@ -334,7 +334,7 @@
   position: relative;
   bottom: -2px;
   right: -2px;
-}
+} */
 
 .artist-box {
   position: relative;
@@ -348,6 +348,12 @@
   overflow: hidden;
   margin-bottom: 0.6rem;
   /* background-color: blue; */
+}
+.artist-box:hover {
+  cursor: pointer;
+  position: relative;
+  bottom: -2px;
+  right: -2px;
 }
 
 .artist-picture {
@@ -366,4 +372,31 @@
   font-size: 5vw;
   z-index: 1;
   margin-top: -0.5vw;
+  color: #000000;
+}
+
+#popup{
+  width:90%;
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 1500px;
+  min-width: 300px;
+  margin-bottom: -5%;
+  margin-right: 0;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: 6px 6px #000000;
+}
+input[type="checkbox"]{
+  display:none;
+}
+/*checkboxがcheckの状態になったらpopupを表示させる*/
+input[type="checkbox"]:checked + #popup{
+  display:block;
 }
