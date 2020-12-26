@@ -301,7 +301,7 @@ th {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 .gaiyou-box{
@@ -315,7 +315,7 @@ th {
   font-family: a-otf-gothic-bbb-pr6n, sans-serif;
   letter-spacing: 0.5px;
   font-size: 1.75rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   padding-right: 0.6rem;
   text-align: justify;
   margin-top: 5%;
@@ -324,10 +324,16 @@ th {
 }
 
 .artists{
+  position: relative;
   margin-top: 0.5rem;
-  width: 99%;
+  width: 80%;
   margin-left: 0.6rem;
-  margin-right: 0.4rem;
+  margin-right: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 /* .artists a {
   color: #000000;
@@ -382,6 +388,7 @@ th {
   z-index: 1;
   margin-top: -0.5vw;
   color: #000000;
+  text-align: ;
 }
 
 #popup{

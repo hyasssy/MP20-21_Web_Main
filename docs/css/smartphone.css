@@ -156,7 +156,7 @@
   }
   .gaiyou {
     font-size: 3vw;
-    line-height: 4vw;
+    line-height: 5vw;
     margin-top: 8%;
     margin-bottom: 8%;
   }
@@ -164,6 +164,11 @@
     width: 100%;
     max-width: 25px;
     margin-right: 0.1rem;
+  }
+  .artists{
+    width: 99%;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
   }
   .artist-box {
     position: relative;
