@@ -64,7 +64,7 @@
                     // document.body.style.position = 'fixed';
                     // document.body.style.top = '-${window.scrollY}px';
                     // scrollPosition = $(window).scrollTop();
-                    // $('body').addClass('fixed').css({'top': -1 * scrollPosition - 10});
+                    // $('.middle').css({'z-index': -1});
                     // メモ
                     // https://imasashi.net/modal-window_bg-fixed.html
                     $(modal).fadeIn();
@@ -75,10 +75,10 @@
             });
 
             $('.js-modal-close').on('click',function(){
-                // $('body').removeClass('fixed').css({'top': 0});
-		        // window.scrollTo( 0 , scrollPosition);
-                $('.js-modal').fadeOut();
-                return false;
+                    // $('.middle').removeClass('fixed').css();
+		            // window.scrollTo( 0 , scrollPosition);
+                    $('.js-modal').fadeOut();
+                    return false;
             }); 
         });
     </script>
@@ -89,7 +89,7 @@
     <div id="artists_template"></div>
     <script>
         $(function(){
-            $("#artists_template").load("artists/template.html");
+            $("#artists_template").load("artists/source_m2.html");
         });
     </script>
 <!-- ページトップ -->
@@ -264,6 +264,21 @@
         </div>
     </div>
 
+<!-- モーダルウィンドウここから -->
+
+
+    <div id= "osato" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img src="images/closebutton.svg"></a></div>
+            <div id="_osato"></div>
+        </div>
+    </div>
+
+
+<!-- モーダルウィンドウここまで -->
+
+
     <div class="middle">
     <div class="artists">
 
@@ -273,18 +288,7 @@
                     <div class="artist-picture"><img src="images/profile/osato.jpg" style="margin-top: -20%;"></div>
             </div>
         </a>
-        <div id= "osato" class="modal js-modal">
-            <!-- <div class="modal__bg_dummy js-modal-close"></div> -->
-            <div class="modal__bg js-modal-close"></div>
-              <div class="modal__content">
-                <!-- クローズボタン -->
-                <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img src="images/closebutton.svg"></a></div>
-                <!-- モーダルウィンドウ内容ここから -->
-                
-                <div id="_osato"></div>
-                <!-- ここまで -->
-            </div>
-        </div>
+        
 
 
 
@@ -367,7 +371,7 @@
         </div>
         
     </div>
-    <!-- </div> -->
+    </div>
 
 
     <div class="margin-empty" style="margin-top: 10%;"></div>
