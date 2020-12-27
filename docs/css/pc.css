@@ -536,6 +536,7 @@ ul li a.current .nav4 {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .mpworks-area img {
   width: 100%;
@@ -583,7 +584,7 @@ ul li a.current .nav4 {
   height: auto;
   /* background-color: aquamarine; */
   margin: 5%;
-  margin-top: -5%;
+  margin-top: -3%;
   /* overflow: hidden; */
   /* flex: 9; */
 }
@@ -620,7 +621,7 @@ ul li a.current .nav4 {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 5%;
-  margin-top: -2%;
+  margin-top: 2%;
   /* background-color: aquamarine; */
   /* margin-left: 5%; */
   /* margin-top: 5%; */
@@ -639,7 +640,7 @@ ul li a.current .nav4 {
   letter-spacing: 0.65px;
   font-size: 1.5rem;
   color: #000000;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .texts.cv {
