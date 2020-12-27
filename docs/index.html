@@ -60,7 +60,8 @@
                     var target = $(this).data('target');
                     var modal = document.getElementById(target);
                     scrollPosition = $(window).scrollTop();
-		            $('body').addClass('fixed').css({'top': -scrollPosition - 10});
+                    $('body').addClass('fixed').css({'top': -scrollPosition - 10});
+                    $('.arrow-box').addClass('fixed').css({'top': -scrollPosition - 10});
                     // メモ
                     // https://imasashi.net/modal-window_bg-fixed.html
                     $(modal).fadeIn();

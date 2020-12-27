@@ -91,11 +91,15 @@
   align-items: flex-end;
   flex-wrap: nowrap;
 }
+.arrow-box.fixed {
+  /* position: fixed; */
+  /* z-index: -1; */
+}
 .arrow00 {
   color: #000000;
   font-family: "HiraginoW4", sans-serif;
   letter-spacing: 0.8px;
-  z-index: 5000;
+  /* z-index: 5000; */
 }
 .arrow00 img {
   display: relative;
@@ -103,6 +107,7 @@
   height: auto;
   max-width: 100px;
   min-width: 10px;
+  /* z-index: -1; */
 }
 .arrow {
   animation-name: arrow-animation;
@@ -475,7 +480,7 @@ ul li a.current .nav4 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 4999;
+  z-index: 999999;
   overflow: hidden;
 }
 .modal__bg{
@@ -505,6 +510,7 @@ ul li a.current .nav4 {
   box-shadow: 6px 6px #000000;
   overflow: auto;
   z-index: 20;
+  z-index: 999999;
   /* background-color: salmon; */
 }
 
@@ -524,5 +530,5 @@ ul li a.current .nav4 {
   bottom: 0;
   right: 0;
   /* z-index: 6000; */
-  padding: 0.6rem;
+  padding: 1.6rem;
 }
