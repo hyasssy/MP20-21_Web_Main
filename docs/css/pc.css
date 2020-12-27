@@ -510,12 +510,12 @@ ul li a.current .nav4 {
 
 .closebutton-box {
   position: fixed;
-  width: 70%;
-  height: 70%;
+  width: 25px;
+  height: 25px;
   /* background-color: slateblue; */
-  z-index: -1;
+  bottom: 15%;
+  right: 15%;
 }
-
 
 .js-modal-close img {
   position: absolute;
@@ -523,6 +523,6 @@ ul li a.current .nav4 {
   height: auto;
   bottom: 0;
   right: 0;
-  z-index: 6000;
+  /* z-index: 6000; */
   padding: 0.6rem;
 }
