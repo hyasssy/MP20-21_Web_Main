@@ -99,3 +99,8 @@ body {
   background: rgba(0, 0, 0, 0.9);
   border-radius: 1rem;
 }
+
+body.fixed {
+  position: fixed;
+  left: 0;
+}

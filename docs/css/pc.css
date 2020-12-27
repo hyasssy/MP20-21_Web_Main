@@ -356,6 +356,7 @@ th {
   align-items: left;
   overflow: hidden;
   margin-bottom: 0.6rem;
+  /* background-color: skyblue; */
 }
 .artist-box:hover {
   cursor: pointer;
@@ -464,6 +465,10 @@ ul li a.current .nav4 {
   background-color: #FFFF00;
 }
 
+
+.js-modal-open {
+  width: 100%;
+}
 .modal{
   display: none;
   height: 100vh;
