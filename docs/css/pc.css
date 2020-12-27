@@ -495,7 +495,7 @@ ul li a.current .nav4 {
   background: #fff;
   /* left: 50%; */
   /* padding: 40px; */
-  position: absolute;
+  position: relative;
   /* top: 50%; */
   /* transform: translate(-50%,-50%); */
   width: 70%;
@@ -504,16 +504,25 @@ ul li a.current .nav4 {
   border-right: 1px solid black;
   box-shadow: 6px 6px #000000;
   overflow: auto;
-  /* z-index: 4500; */
+  z-index: 20;
   /* background-color: salmon; */
 }
 
-.modal__content .js-modal-close img {
+.closebutton-box {
   position: fixed;
+  width: 70%;
+  height: 70%;
+  /* background-color: slateblue; */
+  z-index: -1;
+}
+
+
+.js-modal-close img {
+  position: absolute;
   width: 20px;
   height: auto;
-  align-self: flex-end;
-  top: 83%;
-  left: 83%;
-  transform: translate(-83%,-83%);
+  bottom: 0;
+  right: 0;
+  z-index: 6000;
+  padding: 0.6rem;
 }
