@@ -489,46 +489,140 @@ ul li a.current .nav4 {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-
   position: fixed;
   background: rgba(0,0,0,0.8);
   height: 100vh;
-  /* position: absolute; */
   width: 100%;
+  /* z-index: 6500; */
 }
+
 .modal__content{
   background: #fff;
-  /* left: 50%; */
+  left: 25%;
   /* padding: 40px; */
   position: relative;
-  /* top: 50%; */
+  top: 5%;
   /* transform: translate(-50%,-50%); */
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 90%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   box-shadow: 6px 6px #000000;
   overflow: auto;
-  z-index: 20;
-  z-index: 999999;
+  /* z-index: 20; */
+  /* z-index: 999999; */
   /* background-color: salmon; */
 }
 
 .closebutton-box {
   position: fixed;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   /* background-color: slateblue; */
-  bottom: 15%;
-  right: 15%;
+  bottom: calc(5% + 10px);
+  right: calc(25% + 10px);
 }
 
-.js-modal-close img {
-  position: absolute;
-  width: 20px;
+.js-modal-close a#closebutton_link img {
+  position: fixed;
+  width: 30px;
   height: auto;
-  bottom: 0;
-  right: 0;
-  /* z-index: 6000; */
+  /* bottom: 0;
+  right: 0; */
   padding: 1.6rem;
+}
+
+.mpworks-area {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.mpworks-area img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  right: 0;
+  padding: 1rem;
+}
+
+.works-name {
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.works-name span {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-left: -0.25rem;
+}
+
+.face-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 25%;
+  /* background-color: aquamarine; */
+  margin: 5%;
+  margin-top: 5%;
+  /* overflow: hidden; */
+}
+
+.face-area img {
+  width: auto;
+  height: 90%;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 2.75rem;
+  font-weight: 900;
+  color: #000000;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.name_info {
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  /* font-weight: 900; */
+  color: #000000;
+  margin-top: 1rem;
+  margin-left: 0.1rem;
+}
+
+.text-area {
+  width: 100%;
+  height: auto;
+  /* background-color: aquamarine; */
+  margin-left: 1.5rem;
+  margin-top: 5%;
+}
+
+.midashi {
+  color: #000000;
+  font-family: "HiraginoW4", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.8px;
+  margin-top: 0.5rem;
+}
+
+.texts {
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 5%;
 }

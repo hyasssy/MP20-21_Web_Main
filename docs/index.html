@@ -82,9 +82,16 @@
             }); 
         });
     </script>
+    <script src="scripts/template.js"></script>
 </head>
 
 <body>
+    <div id="artists_template"></div>
+    <script>
+        $(function(){
+            $("#artists_template").load("artists/template.html");
+        });
+    </script>
 <!-- ページトップ -->
     <div id="bg-container">
         <div id="bg-wrapper">
@@ -267,29 +274,21 @@
             </div>
         </a>
         <div id= "osato" class="modal js-modal">
-        <!-- テンプレ内容ここから -->
-
-            <div class="modal__bg js-modal-close">
-            <div class="modal__content">
+            <!-- <div class="modal__bg_dummy js-modal-close"></div> -->
+            <div class="modal__bg js-modal-close"></div>
+              <div class="modal__content">
                 <!-- クローズボタン -->
-                <div class="closebutton-box">
-                    <a class="js-modal-close" href="">
-                        <img src="images/closebutton.svg">
-                    </a>
-                </div>
-                
+                <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img src="images/closebutton.svg"></a></div>
                 <!-- モーダルウィンドウ内容ここから -->
-
-                <template id="template">
-                    <p>テンプレート</p>
-                </template>
-
+                
+                <div id="_osato"></div>
                 <!-- ここまで -->
             </div>
-            </div>
-
-        <!-- ここまで -->
         </div>
+
+
+
+        
 
         
         <div class="artist-box" href="">
@@ -472,7 +471,6 @@
         Mail: <a href="nm.exhibition.info@ml.geidai.ac.jp">nm.exhibition.info@ml.geidai.ac.jp</a></div>
 
     <div class="copyright">©︎MEDIA PRACTICE 20-21</div>
-
 
 
 
