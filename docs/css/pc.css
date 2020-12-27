@@ -338,19 +338,12 @@ th {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  /* z-index: 100; */
+  /* background-color: salmon; */
+  z-index: 4000;
 }
-/* .artists a {
-  color: #000000;
+.artists a {
   text-decoration: none;
 }
-.artists a:hover {
-  color: #000000;
-  text-decoration: none;
-  position: relative;
-  bottom: -2px;
-  right: -2px;
-} */
 
 .artist-box {
   position: relative;
@@ -392,7 +385,7 @@ th {
   color: #000000;
 }
 
-#popup{
+/* #popup{
   width:90%;
   height: 90%;
   display:none;
@@ -415,9 +408,9 @@ input[type="checkbox"]{
   display:none;
 }
 /*checkboxがcheckの状態になったらpopupを表示させる*/
-input[type="checkbox"]:checked + #popup{
+/* input[type="checkbox"]:checked + #popup{
   display:block;
-}
+} */
 
 
 
@@ -469,4 +462,53 @@ ul li a.current .nav3 {
 }
 ul li a.current .nav4 {
   background-color: #FFFF00;
+}
+
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4999;
+  overflow: hidden;
+}
+.modal__bg{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  /* position: absolute; */
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  /* left: 50%; */
+  /* padding: 40px; */
+  position: absolute;
+  /* top: 50%; */
+  /* transform: translate(-50%,-50%); */
+  width: 70%;
+  height: 70%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: 6px 6px #000000;
+  overflow: auto;
+  /* z-index: 4500; */
+  /* background-color: salmon; */
+}
+
+.modal__content .js-modal-close img {
+  position: fixed;
+  width: 20px;
+  height: auto;
+  align-self: flex-end;
+  top: 83%;
+  left: 83%;
+  transform: translate(-83%,-83%);
 }
