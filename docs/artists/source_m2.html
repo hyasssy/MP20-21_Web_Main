@@ -1,6 +1,27 @@
+<template id="artist-template">
+    <div class="artist-top">
+        <artist-top-image></artist-top-image>
+    </div>
+    <!--<div class="artist-introduction">
+        <img src="" alt="" id="artist-face-icon">
+        <artist-name></artist-name>
+        <artist-group></artist-group>
+    </div>
+    <div class="artist-text">
+        <p class="title">制作テーマ</p>
+        <artist-theme></artist-theme>
+        <p class="title">CV</p>
+        <artist-cv></artist-cv>
+    </div>
+    <artist-pastworks></artist-pastworks>-->
+</template>
+
+
+
+
+
 <!-- 大里 -->
 <template id="__osato">
-
 
     <div class="mpworks-area">
         <img src="./images/mpworks/osato.jpg">
@@ -28,81 +49,131 @@
     </div>
 
 
-        <div class="text-area">
-            <div class="midashi">制作テーマ</div>
-            <p class="texts">
-                消費者であることの同時代性を引き受けながら、現代の特定の環境下において支配的な思考・感情・行動の型をまさぐるような介入をしている。
-                <br /><a href="https://www.instagram.com/jun_osato/">https://www.instagram.com/jun_osato/</a>
-            </p>
-            <div class="midashi">CV</div>
+    <div class="text-area">
+        <div class="midashi">制作テーマ</div>
+        <p class="texts">
+            消費者であることの同時代性を引き受けながら、現代の特定の環境下において支配的な思考・感情・行動の型をまさぐるような介入をしている。
+            <br /><a href="https://www.instagram.com/jun_osato/">https://www.instagram.com/jun_osato/</a>
+        </p>
+        <div class="midashi">CV</div>
 
-            <table class="texts cv" style="word-wrap:break-word;">
-                <tr><td>1994</td> <td>東京都生まれ</td></tr>
-                <tr><td>　</td></tr>
+        <table class="texts cv" style="word-wrap:break-word;">
+            <tr>
+                <td>1994</td>
+                <td>東京都生まれ</td>
+            </tr>
+            <tr>
+                <td>　</td>
+            </tr>
 
-                <tr><td>    <span>活動歴</span> </td></tr>
-                <tr><td>　</td></tr>
-                <tr><td>2016</td>   <td>「ゆううつをゆうえつしてしまった。」（アートスペースココノカ／東京）</td></tr>
-                <tr><td>2017</td>   <td>「Boogie Nights」（特火点-tochka／東京）</td></tr>
-                <tr><td></td>       <td>「AFTERALL」（ケーララ州コチ／インド）</td></tr>
-                <!-- <tr></tr> -->
-                <tr><td>2018</td>   <td>「秋山佑太＋布施琳太郎『モデルルーム』」秋山佑太とのコラボレーションで出展（SNOW Contemporary／東京）</td></tr>
-                <tr><td></td>       <td>「ゲンロン カオス*ラウンジ 新芸術校 第3期 最終成果展 2018『サードパーティ』」</td></tr>
-                <tr><td></td>       <td>　龍村景一との共同制作で出展（ゲンロンカフェ／東京）</td></tr>
-                <!-- <tr></tr> -->
-                <tr><td>2019</td>   <td>「Beyond tde Telling」（東京藝術大学芸術情報センター／東京）</td></tr>
-                <!-- <tr></tr> -->
-                <tr><td>　</td></tr>
-                <tr><td>2018~19</td>  <td>リトルプレス「爆竹書房」として無審査合同漫画雑誌『超漫パンゲア』制作</td></tr>
-                <tr><td>2020~</td>      <td>リトルプレス「アロョイ文庫」として『烏合読本』制作</td></tr>
-                <!-- <tr></tr> -->
-                <tr><td>　</td></tr>
-                <tr><td>    <span>受賞歴</span> </td></tr>
-                <tr><td>　</td></tr>
-                <tr><td>2015</td>   <td>ターナーアワード 2015優秀賞</td></tr>
-                <tr><td></td>       <td>JAGDA学生グランプリ2015入選</td></tr>
-            </table>        
-        </div>
+            <tr>
+                <td> <span>活動歴</span> </td>
+            </tr>
+            <tr>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>「ゆううつをゆうえつしてしまった。」（アートスペースココノカ／東京）</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td>「Boogie Nights」（特火点-tochka／東京）</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>「AFTERALL」（ケーララ州コチ／インド）</td>
+            </tr>
+            <!-- <tr></tr> -->
+            <tr>
+                <td>2018</td>
+                <td>「秋山佑太＋布施琳太郎『モデルルーム』」秋山佑太とのコラボレーションで出展（SNOW Contemporary／東京）</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>「ゲンロン カオス*ラウンジ 新芸術校 第3期 最終成果展 2018『サードパーティ』」</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>　龍村景一との共同制作で出展（ゲンロンカフェ／東京）</td>
+            </tr>
+            <!-- <tr></tr> -->
+            <tr>
+                <td>2019</td>
+                <td>「Beyond tde Telling」（東京藝術大学芸術情報センター／東京）</td>
+            </tr>
+            <!-- <tr></tr> -->
+            <tr>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>2018~19</td>
+                <td>リトルプレス「爆竹書房」として無審査合同漫画雑誌『超漫パンゲア』制作</td>
+            </tr>
+            <tr>
+                <td>2020~</td>
+                <td>リトルプレス「アロョイ文庫」として『烏合読本』制作</td>
+            </tr>
+            <!-- <tr></tr> -->
+            <tr>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td> <span>受賞歴</span> </td>
+            </tr>
+            <tr>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>ターナーアワード 2015優秀賞</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>JAGDA学生グランプリ2015入選</td>
+            </tr>
+        </table>
+    </div>
 
-        <div class="mpworks-area">
-            <img src="./images/works/1_osato.jpeg" style="width: 50%;">
+    <div class="mpworks-area">
+        <img src="./images/works/1_osato.jpeg" style="width: 50%;">
+    </div>
+    <div class="caption">
+        <div class="works-name">
+            過去の作品<br>
+            <span>フレンドリースペース</span><br>
+            <!-- 2020<br> -->
+            <!-- 作品形態 -->
         </div>
-        <div class="caption">
-            <div class="works-name">
-                過去の作品<br>
-                <span>フレンドリースペース</span><br>
-                <!-- 2020<br> -->
-                <!-- 作品形態 -->
-            </div>
-        </div>
-        
-        <div class="margin-empty" style="margin-top: 20%;"></div>
+    </div>
 
-        <div class="mpworks-area">
-            <img src="./images/works/2_osato.jpeg">
-        </div>
-        <div class="caption">
-            <div class="works-name">
-                過去の作品<br>
-                <span>mixed</span><br>
-                <!-- 2020<br> -->
-                <!-- 作品形態 -->
-            </div>
-        </div>
-        <div class="margin-empty" style="margin-top: 20%;"></div>
+    <div class="margin-empty" style="margin-top: 20%;"></div>
 
-        <div class="mpworks-area">
-            <img src="./images/works/3_osato.jpeg" style="width: 50%;">
+    <div class="mpworks-area">
+        <img src="./images/works/2_osato.jpeg">
+    </div>
+    <div class="caption">
+        <div class="works-name">
+            過去の作品<br>
+            <span>mixed</span><br>
+            <!-- 2020<br> -->
+            <!-- 作品形態 -->
         </div>
-        <div class="caption">
-            <div class="works-name">
-                過去の作品<br>
-                <span>prototyping</span><br>
-                <!-- 2020<br> -->
-                <!-- 作品形態 -->
-            </div>
+    </div>
+    <div class="margin-empty" style="margin-top: 20%;"></div>
+
+    <div class="mpworks-area">
+        <img src="./images/works/3_osato.jpeg" style="width: 50%;">
+    </div>
+    <div class="caption">
+        <div class="works-name">
+            過去の作品<br>
+            <span>prototyping</span><br>
+            <!-- 2020<br> -->
+            <!-- 作品形態 -->
         </div>
-        <div class="margin-empty" style="margin-top: 20%;"></div>
+    </div>
+    <div class="margin-empty" style="margin-top: 20%;"></div>
 
 
 </template>
@@ -137,66 +208,81 @@
     </div>
 
 
-        <div class="text-area">
-            <div class="midashi">制作テーマ</div>
-            <p class="texts">
-                撮影行為を、イメージを獲得するだけではなく、対象と関わるための仕草として捉える。カメラを介することで生まれる事象に着目して映像を制作している。
-                <br /><a href="https://otakiayaka.tumblr.com/">https://otakiayaka.tumblr.com/</a>
-            </p>
-            <div class="midashi">CV</div>
+    <div class="text-area">
+        <div class="midashi">制作テーマ</div>
+        <p class="texts">
+            撮影行為を、イメージを獲得するだけではなく、対象と関わるための仕草として捉える。カメラを介することで生まれる事象に着目して映像を制作している。
+            <br /><a href="https://otakiayaka.tumblr.com/">https://otakiayaka.tumblr.com/</a>
+        </p>
+        <div class="midashi">CV</div>
 
-            <table class="texts cv" style="word-wrap:break-word;">
+        <table class="texts cv" style="word-wrap:break-word;">
 
-                <tr><td>1995</td> <td>東京都生まれ</td></tr>
-                <tr><td>　</td></tr>
+            <tr>
+                <td>1995</td>
+                <td>東京都生まれ</td>
+            </tr>
+            <tr>
+                <td>　</td>
+            </tr>
 
-                <tr><td>    <span>展示歴</span> </td></tr>
-                <tr><td>　</td></tr>
-                <tr><td>2019</td>   <td>「平成30年度 第42回 東京五美術大学連合卒業・修了制作展」（国立新美術館／東京）</td></tr>
-                <tr><td></td>   <td>「2018年度 多摩美術大学美術学部卒業制作展」（多摩美術大学八王子キャンパス／東京）</td></tr>
-                
-            </table>        
-        </div>
+            <tr>
+                <td> <span>展示歴</span> </td>
+            </tr>
+            <tr>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>「平成30年度 第42回 東京五美術大学連合卒業・修了制作展」（国立新美術館／東京）</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>「2018年度 多摩美術大学美術学部卒業制作展」（多摩美術大学八王子キャンパス／東京）</td>
+            </tr>
 
-        <div class="mpworks-area">
-            <img src="./images/works/1_otaki.jpg">
-        </div>
-        <div class="caption">
-            <div class="works-name">
-                <!-- 過去の作品<br> -->
-                <span>石神井川</span><br>
-                2020
-                <!-- 作品形態 -->
-            </div>
-        </div>
-        
-        <div class="margin-empty" style="margin-top: 20%;"></div>
+        </table>
+    </div>
 
-        <div class="mpworks-area">
-            <img src="./images/works/2_otaki.jpg">
+    <div class="mpworks-area">
+        <img src="./images/works/1_otaki.jpg">
+    </div>
+    <div class="caption">
+        <div class="works-name">
+            <!-- 過去の作品<br> -->
+            <span>石神井川</span><br>
+            2020
+            <!-- 作品形態 -->
         </div>
-        <div class="caption">
-            <div class="works-name">
-                <!-- 過去の作品<br> -->
-                <span>坂と鯉</span><br>
-                2020
-                <!-- 作品形態 -->
-            </div>
-        </div>
-        <div class="margin-empty" style="margin-top: 20%;"></div>
+    </div>
 
-        <div class="mpworks-area">
-            <img src="./images/works/3_otaki.jpg">
+    <div class="margin-empty" style="margin-top: 20%;"></div>
+
+    <div class="mpworks-area">
+        <img src="./images/works/2_otaki.jpg">
+    </div>
+    <div class="caption">
+        <div class="works-name">
+            <!-- 過去の作品<br> -->
+            <span>坂と鯉</span><br>
+            2020
+            <!-- 作品形態 -->
         </div>
-        <div class="caption">
-            <div class="works-name">
-                過去の作品<br>
-                <span>繰り返し</span><br>
-                2019<br>
-                <!-- 作品形態 -->
-            </div>
+    </div>
+    <div class="margin-empty" style="margin-top: 20%;"></div>
+
+    <div class="mpworks-area">
+        <img src="./images/works/3_otaki.jpg">
+    </div>
+    <div class="caption">
+        <div class="works-name">
+            過去の作品<br>
+            <span>繰り返し</span><br>
+            2019<br>
+            <!-- 作品形態 -->
         </div>
-        <div class="margin-empty" style="margin-top: 20%;"></div>
+    </div>
+    <div class="margin-empty" style="margin-top: 20%;"></div>
 
 
 </template>

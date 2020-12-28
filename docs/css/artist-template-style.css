@@ -1,0 +1,22 @@
+.artist-top {
+  width: 100%;
+  background-color: red;
+}
+.artist-top img {
+  width: 100%;
+}
+
+.artist-introduction {
+  overflow: hidden;
+}
+.artist-introduction img {
+  width: 100%;
+}
+.artist-portrait-container {
+  width: 35%;
+  float: left;
+}
+.artist-info-container {
+  float: left;
+  width: 64%;
+}

@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/pc.css">
     <link rel="stylesheet" href="css/smartphone.css">
-    <link rel="stylesheet" href="css/smartphone_280px.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/artist-template-style.css">
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <script src="scripts/navigation.js"></script>
     <script type="text/javascript">//スクロールに応じて背景文字を薄くする。
         window.onscroll = function () {
@@ -38,7 +40,7 @@
             $("html").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
         }, 000);
     </script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <script type="text/javascript">
         $(function () {
             $('a[href^=#]').click(function () {
@@ -51,47 +53,23 @@
             });
         });
     </script>
+
+    <!-- スライダー -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/plugin/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/plugin/slick-theme.css"> -->
     <!-- モーダルウィンドウjQuery -->
-    <script>
-        $(function () {
-            // var scrollPosition;
+    <!-- <script src="scripts/template.js"></script> -->
+    <script src="scripts/ModalWindow.js"></script>
 
-            $('.js-modal-open').each(function () {
-                $(this).on('click', function () {
-                    var target = $(this).data('target');
-                    var modal = document.getElementById(target);
-
-                    // document.body.style.position = 'fixed';
-                    // document.body.style.top = '-${window.scrollY}px';
-                    // scrollPosition = $(window).scrollTop();
-                    // $('.middle').css({'z-index': -1});
-                    // メモ
-                    // https://imasashi.net/modal-window_bg-fixed.html
-                    $(modal).fadeIn();
-                    // モーダルウィンドウスクロール位置リセット
-                    $('.modal__content').scrollTop(0);
-                    return false;
-                });
-            });
-
-            $('.js-modal-close').on('click', function () {
-                // $('.middle').removeClass('fixed').css();
-                // window.scrollTo( 0 , scrollPosition);
-                $('.js-modal').fadeOut();
-                return false;
-            });
-        });
-    </script>
-    <script src="scripts/template.js"></script>
 </head>
 
 <body>
-    <div id="artists_template"></div>
+    <!-- <div id="artists_template"></div>
     <script>
         $(function () {
             $("#artists_template").load("artists/source_m2.html");
         });
-    </script>
+    </script>-->
     <!-- ページトップ -->
     <div id="bg-container">
         <div id="bg-wrapper">
@@ -243,10 +221,11 @@
                     </div>
                     <div class="sns">
                         <a href="https://www.instagram.com/geidainewmedia/" target="blank"><img
-                                src="images/instagram.svg"></a>
-                        <a href="https://twitter.com/Geidai_newmedia" target="blank"><img src="images/twitter.svg"></a>
+                                src="images/icons/iconI.svg"></a>
+                        <a href="https://twitter.com/Geidai_newmedia" target="blank"><img
+                                src="images/icons/iconT.svg"></a>
                         <a href="https://www.facebook.com/Tokyo.Geidai.New.Media/" target="blank"><img
-                                src="images/facebook.svg"></a>
+                                src="images/icons/iconF.svg"></a>
                     </div>
                     <p class="details01">
                         主催：東京藝術大学大学院映像研究科、横浜市文化観光局<br>
@@ -298,7 +277,7 @@
             <div class="modal__content">
                 <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img
                             src="images/closebutton.svg"></a></div>
-                <div id="_osato"></div>
+                <div id="_osato">あいうえお</div>
             </div>
         </div>
         <div id="otaki" class="modal js-modal">
@@ -508,8 +487,46 @@
     <div class="copyright">©︎MEDIA PRACTICE 20-21</div>
 
 
-
+    <!-- スライドショーのjs -->
+    <!-- <script type="text/javascript" src="./scripts/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').slick({
+                autoplay: true, //自動再生
+                autoplaySpeed: 3000,
+                //adaptiveHeight: true,
+                arrows: false,
+                dots: true, //ドットのナビゲーションを表示
+                infinite: true, //スライドのループ有効化
+                speed: 700, //切り替えのスピード（小さくすると速くなる）
+                fade: true, //フェードの有効化
+                waitForAnimate: false,
+            });
+        });
+    </script> -->
 
 </body>
 
 </html>
+<template id="artist-template">
+    <div class="artist-top">
+        <div>あいうえおテスト</div>
+        <artist-top></artist-top>
+    </div>
+    <div class="artist-introduction">
+        <div class="artist-portrait-container">
+            <img src="" alt="" id="artist-portrait">
+        </div>
+        <div class="artist-info-container">
+            <div id="artist-name"></div>
+            <div id="artist-info"></div>
+        </div>
+    </div>
+    <div class="artist-text">
+        <p class="title">制作テーマ</p>
+        <p id="artist-theme"></p>
+        <p class="title">CV</p>
+        <p id="artist-cv"></p>
+    </div>
+    <artist-pastworks></artist-pastworks>
+</template>
