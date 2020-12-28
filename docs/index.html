@@ -53,11 +53,11 @@
     </script>
     <!-- モーダルウィンドウjQuery -->
     <script>
-        $(function(){
+        $(function () {
             // var scrollPosition;
 
-            $('.js-modal-open').each(function(){
-                $(this).on('click',function(){
+            $('.js-modal-open').each(function () {
+                $(this).on('click', function () {
                     var target = $(this).data('target');
                     var modal = document.getElementById(target);
 
@@ -71,15 +71,15 @@
                     // モーダルウィンドウスクロール位置リセット
                     $('.modal__content').scrollTop(0);
                     return false;
-                    });
+                });
             });
 
-            $('.js-modal-close').on('click',function(){
-                    // $('.middle').removeClass('fixed').css();
-		            // window.scrollTo( 0 , scrollPosition);
-                    $('.js-modal').fadeOut();
-                    return false;
-            }); 
+            $('.js-modal-close').on('click', function () {
+                // $('.middle').removeClass('fixed').css();
+                // window.scrollTo( 0 , scrollPosition);
+                $('.js-modal').fadeOut();
+                return false;
+            });
         });
     </script>
     <script src="scripts/template.js"></script>
@@ -88,18 +88,18 @@
 <body>
     <div id="artists_template"></div>
     <script>
-        $(function(){
+        $(function () {
             $("#artists_template").load("artists/source_m2.html");
         });
     </script>
-<!-- ページトップ -->
+    <!-- ページトップ -->
     <div id="bg-container">
         <div id="bg-wrapper">
             <div class="backStr" id="NamesArea"></div>
             <script type="text/javascript" src="scripts/names.js"></script>
         </div>
     </div>
-<div class="page-top" id="top">
+    <div class="page-top" id="top">
         <div class="box">
             <div class=""><img src="images/teaser_logo_without_bg.svg"></div>
         </div>
@@ -109,368 +109,398 @@
             </div>
         </div>
         <!-- ナビゲーション -->
-        <nav><div id="nv-wrapper">
-            <ul>
-                <li><a href="#top"><div class="nav1"></div></a></li>
-                <li><a href="#title"><div class="nav2"></div></a></li>
-                <li><a href="#details"><div class="nav3"></div></a></li>
-                <li><a href="#artists"><div class="nav4"></div></a></li>
-            </ul>
-        </div></nav>
-</div>
-
-
-<!-- タイトル -->
-<div id="title">
-    <div class="margin-empty"></div>
-    <div class="title-box">
-        <div class="title00">
-            <span>MEDIA PRACTICE 20-21</span><br>
-            <span>東京藝術大学大学院</span><span>映像研究科</span><span>メディア映像専攻</span> <br><span>年次成果発表会</span>
-        </div>
-        <div class="title01">
-            <span>修士課程修了制作展／</span><span>修士一年次成果発表会</span>
-        </div>
-    </div>
-
-    <div class="middle">
-        <div class="middle-box"> <div class="middle-box-container">
-
-            <div class="details00">開催概要</div>
-            <div class="gaiyou-container"><div class="gaiyou-box">
-                <p class="gaiyou">
-                    メディア映像専攻では、「MEDIA PRACTICE 20-21」と題して、私たちの学舎である
-                    元町中華街校舎を会場に修士課程修了制作展ならびに修士一年次成果発表会を開催いたします。
-                    修士一年生は、後期以降に個人で取り組んできた研究や制作の成果を、
-                    修士二年生は修士課程の集大成を修了制作として発表します。
-                </p>
-
-                <p class="gaiyou">
-                    本展では、実写映像や３DCGアニメーション、インスタレーション、ゲーム、パフォーマンスなど、様々な形態の作品が展示されています。
-                    その出発点には、目の前のメディウムと戯れる中で生まれる気づきがありました。
-                    そうした気づきは、講評やゼミ、展示を通じて、物質や音、映像、 空間の奥行き、時には社会そのものへの影響という形となって確かな手応えを返してきます。
-                    作家一人ひとりの声が響き合うこの会場で、私たちがそれぞれのメディウムから掘り起こした問いを来場者の皆様にも木霊させることができるのならば、それに勝る喜びはありません。
-                </p>
-            
-                <p class="gaiyou" style="text-align: right">
-                    メディア映像専攻 14期生・15期生 一同
-                </p>
-            </div></div>
-        </div></div>
-    </div>
-    <div class="margin-empty"></div>
-    <div class="arrow-box" style="margin-top: -17%;">
-        <div class="arrow00">
-            <a href="#details"><img src="images/arrow.svg" class="arrow"></a>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="margin-empty" style="margin-top: 30%;"></div>
-
-  
-    
-<!-- 詳細ページ -->
-<div id="details">　
-    <div class="margin-empty" style="margin-top: 5%;"></div>
-    <div class="middle">
-        <div class="middle-box"> <div class="middle-box-container">
-            <!-- <p class="details00"> -->
-                <table class="details00" width="99%">
-                    <tr>
-                        <th>会期</th><th>2021年1月15日［金］― 17日［日］</th>
-                    </tr>
-                    <tr>
-                        <th>時間</th><th>11:00 ― 19:00　<span id="details00_detail">※ 最終入場は18:30まで</span></th>
-                    </tr>
-                    <tr>
-                        <th>入場</th><th>無料</th>
-                    </tr>
-                    <tr>
-                        <th>場所</th><th>東京藝術大学 横浜校地 元町中華街校舎</th>
-                    </tr>
-                    <tr>
-                        <th></th><th class="details01-s">神奈川県横浜市中区山下町116｜
-                            <a href="https://goo.gl/maps/SX3Y8GeA8UzhfSFMA" target=_blank>Google Map</a></th>
-                    </tr>
-                    <tr>
-                        <th></th><th class="map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5727459843033!2d139.64414481528212!3d35.44061255073792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ce3e0d84e95%3A0x1faa02aa1b8a8e21!2z5p2x5Lqs6Jed6KGT5aSn5a2mIOWkp-WtpumZouaYoOWDj-eglOeptuenkSDlhYPnlLrkuK3oj6_ooZfmoKHoiI4!5e0!3m2!1sja!2sjp!4v1607438924997!5m2!1sja!2sjp"
-                                frameborder="0"
-                                style="border:0;filter:hue-rotate(180deg)invert(80%);-webkit-filter:hue-rotate(180deg)invert(80%);"
-                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th class="details01-s">
-                            <span>JR京浜東北線・根岸線石川町駅</span> 北口より徒歩6分。<br>
-                            <span>みなとみらい線元町・中華街駅</span> 3番出口より徒歩8分。
-                        </th>
-                    </tr>
-                </table>
-
-            
-
-            <div class="notes">
-                ※新型コロナウイルス感染症拡大防止のため、ご来場の皆様には、入場制限、ご連絡先の記入へのご協力をお願いする場合がございます。 また、体調の優れない方はご来場をお控えくださいますようお願い申し上げます。
+        <nav>
+            <div id="nv-wrapper">
+                <ul>
+                    <li><a href="#top">
+                            <div class="nav1"></div>
+                        </a></li>
+                    <li><a href="#title">
+                            <div class="nav2"></div>
+                        </a></li>
+                    <li><a href="#details">
+                            <div class="nav3"></div>
+                        </a></li>
+                    <li><a href="#artists">
+                            <div class="nav4"></div>
+                        </a></li>
+                </ul>
             </div>
-            <div class="sns">
-                <a href="https://www.instagram.com/geidainewmedia/" target="blank"><img src="images/instagram.svg"></a>
-                <a href="https://twitter.com/Geidai_newmedia" target="blank"><img src="images/twitter.svg"></a>
-                <a href="https://www.facebook.com/Tokyo.Geidai.New.Media/" target="blank"><img src="images/facebook.svg"></a>
+        </nav>
+    </div>
+
+
+    <!-- タイトル -->
+    <div id="title">
+        <div class="margin-empty"></div>
+        <div class="title-box">
+            <div class="title00">
+                <span>MEDIA PRACTICE 20-21</span><br>
+                <span>東京藝術大学大学院</span><span>映像研究科</span><span>メディア映像専攻</span> <br><span>年次成果発表会</span>
             </div>
-            <p class="details01">
-                主催：東京藝術大学大学院映像研究科、横浜市文化観光局<br>
-                協力：ソフトバンク株式会社 CSR本部<br>
-            </p>
-        </div> </div>
+            <div class="title01">
+                <span>修士課程修了制作展／</span><span>修士一年次成果発表会</span>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="middle-box">
+                <div class="middle-box-container">
+
+                    <div class="details00">開催概要</div>
+                    <div class="gaiyou-container">
+                        <div class="gaiyou-box">
+                            <p class="gaiyou">
+                                メディア映像専攻では、「MEDIA PRACTICE 20-21」と題して、私たちの学舎である
+                                元町中華街校舎を会場に修士課程修了制作展ならびに修士一年次成果発表会を開催いたします。
+                                修士一年生は、後期以降に個人で取り組んできた研究や制作の成果を、
+                                修士二年生は修士課程の集大成を修了制作として発表します。
+                            </p>
+
+                            <p class="gaiyou">
+                                本展では、実写映像や３DCGアニメーション、インスタレーション、ゲーム、パフォーマンスなど、様々な形態の作品が展示されています。
+                                その出発点には、目の前のメディウムと戯れる中で生まれる気づきがありました。
+                                そうした気づきは、講評やゼミ、展示を通じて、物質や音、映像、 空間の奥行き、時には社会そのものへの影響という形となって確かな手応えを返してきます。
+                                作家一人ひとりの声が響き合うこの会場で、私たちがそれぞれのメディウムから掘り起こした問いを来場者の皆様にも木霊させることができるのならば、それに勝る喜びはありません。
+                            </p>
+
+                            <p class="gaiyou" style="text-align: right">
+                                メディア映像専攻 14期生・15期生 一同
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="margin-empty"></div>
+        <div class="arrow-box" style="margin-top: -17%;">
+            <div class="arrow00">
+                <a href="#details"><img src="images/arrow.svg" class="arrow"></a>
+            </div>
+        </div>
     </div>
 
-    <div class="margin-empty"></div>
-    <div class="arrow-box" style="margin-top: -17%;">
-    <div class="arrow00">
-        <a href="#artists"><img src="images/arrow.svg" class="arrow"></a>
-    </div>
-    </div>
-</div>
 
 
-<!-- 作家情報 -->
+    <div class="margin-empty" style="margin-top: 30%;"></div>
+
+
+
+    <!-- 詳細ページ -->
+    <div id="details">　
+        <div class="margin-empty" style="margin-top: 5%;"></div>
+        <div class="middle">
+            <div class="middle-box">
+                <div class="middle-box-container">
+                    <!-- <p class="details00"> -->
+                    <table class="details00" width="99%">
+                        <tr>
+                            <th>会期</th>
+                            <th>2021年1月15日［金］― 17日［日］</th>
+                        </tr>
+                        <tr>
+                            <th>時間</th>
+                            <th>11:00 ― 19:00　<span id="details00_detail">※ 最終入場は18:30まで</span></th>
+                        </tr>
+                        <tr>
+                            <th>入場</th>
+                            <th>無料</th>
+                        </tr>
+                        <tr>
+                            <th>場所</th>
+                            <th>東京藝術大学 横浜校地 元町中華街校舎</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="details01-s">神奈川県横浜市中区山下町116｜
+                                <a href="https://goo.gl/maps/SX3Y8GeA8UzhfSFMA" target=_blank>Google Map</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5727459843033!2d139.64414481528212!3d35.44061255073792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ce3e0d84e95%3A0x1faa02aa1b8a8e21!2z5p2x5Lqs6Jed6KGT5aSn5a2mIOWkp-WtpumZouaYoOWDj-eglOeptuenkSDlhYPnlLrkuK3oj6_ooZfmoKHoiI4!5e0!3m2!1sja!2sjp!4v1607438924997!5m2!1sja!2sjp"
+                                    frameborder="0"
+                                    style="border:0;filter:hue-rotate(180deg)invert(80%);-webkit-filter:hue-rotate(180deg)invert(80%);"
+                                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="details01-s">
+                                <span>JR京浜東北線・根岸線石川町駅</span> 北口より徒歩6分。<br>
+                                <span>みなとみらい線元町・中華街駅</span> 3番出口より徒歩8分。
+                            </th>
+                        </tr>
+                    </table>
+
+
+
+                    <div class="notes">
+                        ※新型コロナウイルス感染症拡大防止のため、ご来場の皆様には、入場制限、ご連絡先の記入へのご協力をお願いする場合がございます。
+                        また、体調の優れない方はご来場をお控えくださいますようお願い申し上げます。
+                    </div>
+                    <div class="sns">
+                        <a href="https://www.instagram.com/geidainewmedia/" target="blank"><img
+                                src="images/instagram.svg"></a>
+                        <a href="https://twitter.com/Geidai_newmedia" target="blank"><img src="images/twitter.svg"></a>
+                        <a href="https://www.facebook.com/Tokyo.Geidai.New.Media/" target="blank"><img
+                                src="images/facebook.svg"></a>
+                    </div>
+                    <p class="details01">
+                        主催：東京藝術大学大学院映像研究科、横浜市文化観光局<br>
+                        協力：ソフトバンク株式会社 CSR本部<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="margin-empty"></div>
+        <div class="arrow-box" style="margin-top: -17%;">
+            <div class="arrow00">
+                <a href="#artists"><img src="images/arrow.svg" class="arrow"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 作家情報 -->
     <div class="margin-empty" style="margin-top: 30%;"></div>
     <div>　</div>
     <div id="artists">
-    <div class="margin-empty" style="margin-top: 5%;"></div>
-    <div class="title-box">
-        <div class="title00">
-            <span>作家一覧｜修士２年</span>
-        </div>
-        <div class="title01">
-            <span>大里 淳 / </span>
-            <span>大滝彩加 / </span>
-            <span>岡千穂 / </span>
-            <span>古閑慶治 / </span>
-            <span>小林舞衣 / </span>
-            <span>椎名悠香 / </span>
-            <span>宍倉志信 / </span>
-            <span>志村茉那美 / </span>
-            <span>瀬古瑞歩 / </span>
-            <span>平井亨季 / </span>
-            <span>福原翼 / </span>
-            <span>吉田真也</span>
-        </div>
-    </div>
-
-<!-- モーダルウィンドウここから -->
-
-
-    <div id= "osato" class="modal js-modal">
-        <div class="modal__bg js-modal-close"></div>
-          <div class="modal__content">
-            <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img src="images/closebutton.svg"></a></div>
-            <div id="_osato"></div>
-        </div>
-    </div>
-    <div id= "otaki" class="modal js-modal">
-        <div class="modal__bg js-modal-close"></div>
-          <div class="modal__content">
-            <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img src="images/closebutton.svg"></a></div>
-            <div id="_otaki"></div>
-        </div>
-    </div>
-
-
-<!-- モーダルウィンドウここまで -->
-
-
-    <div class="middle">
-    <div class="artists">
-
-        <a class="js-modal-open" href="" data-target="osato">
-            <div class="artist-box">
-                    <div class="artist-name">大里淳 / Jun Osato</div>
-                    <div class="artist-picture"><img src="images/profile/osato.jpg" style="margin-top: -20%;"></div>
+        <div class="margin-empty" style="margin-top: 5%;"></div>
+        <div class="title-box">
+            <div class="title00">
+                <span>作家一覧｜修士２年</span>
             </div>
-        </a>
-        
-        <a class="js-modal-open" href="" data-target="otaki">
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">大滝彩加 / Ayaka Otaki</div>
-                <div class="artist-picture"><img src="images/profile/otaki.jpg" style="margin-top: -17%;"></div>
+            <div class="title01">
+                <span>大里 淳 / </span>
+                <span>大滝彩加 / </span>
+                <span>岡千穂 / </span>
+                <span>古閑慶治 / </span>
+                <span>小林舞衣 / </span>
+                <span>椎名悠香 / </span>
+                <span>宍倉志信 / </span>
+                <span>志村茉那美 / </span>
+                <span>瀬古瑞歩 / </span>
+                <span>平井亨季 / </span>
+                <span>福原翼 / </span>
+                <span>吉田真也</span>
+            </div>
         </div>
-        </a>
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">岡千穂 / Chiho Oka</div>
-                <div class="artist-picture"><img src="images/profile/oka.jpg" style="margin-top: -23%;"></div>
-        </div>
-        
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #000000;">古閑慶治 / Cage Koga</div>
-                <div class="artist-picture"><img src="images/profile/koga.jpg" style="margin-top: -12%;"></div>
-        </div>
-        
+        <!-- モーダルウィンドウここから -->
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">小林舞衣 / Mai Kobayashi</div>
-                <div class="artist-picture"><img src="images/profile/kobayashi.jpg" style="margin-top: -27%;"></div>
-        </div>
-        
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">椎名悠香 / Yuka Shiina</div>
-                <div class="artist-picture"><img src="images/profile/shiina.jpg" style="margin-top: -13%;"></div>
+        <div id="osato" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img
+                            src="images/closebutton.svg"></a></div>
+                <div id="_osato"></div>
+            </div>
         </div>
-        
+        <div id="otaki" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img
+                            src="images/closebutton.svg"></a></div>
+                <div id="_otaki"></div>
+            </div>
+        </div>
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">宍倉志信 / Shinobu Shishikura</div>
-                <div class="artist-picture"><img src="images/profile/shishikura.jpg" style="margin-top: -20%;"></div>
-        </div>
-        
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">志村茉那美 / Manami Shimura</div>
-                <div class="artist-picture"><img src="images/profile/shimura.jpg" style="margin-top: -27%;"></div>
-        </div>
-        
+        <!-- モーダルウィンドウここまで -->
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">瀬古瑞歩 / Mizuho Seko</div>
-                <div class="artist-picture"><img src="images/profile/seko.jpg" style="margin-top: -25%;"></div>
-        </div>
-        
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">平井亨季 / Koki Hirai</div>
-                <div class="artist-picture"><img src="images/profile/hirai.jpg" style="margin-top: -10%;"></div>
-        </div>
-        
+        <div class="middle">
+            <div class="artists">
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #000000;">福原翼 / Tsubasa Fukuhara</div>
-                <div class="artist-picture"><img src="images/profile/fukuhara.jpg" style="margin-top: -25%;"></div>
-        </div>
-        
+                <a class="js-modal-open" href="" data-target="osato">
+                    <div class="artist-box">
+                        <div class="artist-name">大里淳 / Jun Osato</div>
+                        <div class="artist-picture"><img src="images/profile/osato.jpg" style="margin-top: -20%;"></div>
+                    </div>
+                </a>
 
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">吉田真也 / Shinya Yoshida</div>
-                <div class="artist-picture"><img src="images/profile/yoshida.jpg" style="margin-top: -15%;"></div>
+                <a class="js-modal-open" href="" data-target="otaki">
+                    <div class="artist-box" href="">
+                        <div class="artist-name" style="color: #ffffff;">大滝彩加 / Ayaka Otaki</div>
+                        <div class="artist-picture"><img src="images/profile/otaki.jpg" style="margin-top: -17%;"></div>
+                    </div>
+                </a>
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">岡千穂 / Chiho Oka</div>
+                    <div class="artist-picture"><img src="images/profile/oka.jpg" style="margin-top: -23%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #000000;">古閑慶治 / Cage Koga</div>
+                    <div class="artist-picture"><img src="images/profile/koga.jpg" style="margin-top: -12%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">小林舞衣 / Mai Kobayashi</div>
+                    <div class="artist-picture"><img src="images/profile/kobayashi.jpg" style="margin-top: -27%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">椎名悠香 / Yuka Shiina</div>
+                    <div class="artist-picture"><img src="images/profile/shiina.jpg" style="margin-top: -13%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">宍倉志信 / Shinobu Shishikura</div>
+                    <div class="artist-picture"><img src="images/profile/shishikura.jpg" style="margin-top: -20%;">
+                    </div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">志村茉那美 / Manami Shimura</div>
+                    <div class="artist-picture"><img src="images/profile/shimura.jpg" style="margin-top: -27%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">瀬古瑞歩 / Mizuho Seko</div>
+                    <div class="artist-picture"><img src="images/profile/seko.jpg" style="margin-top: -25%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">平井亨季 / Koki Hirai</div>
+                    <div class="artist-picture"><img src="images/profile/hirai.jpg" style="margin-top: -10%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #000000;">福原翼 / Tsubasa Fukuhara</div>
+                    <div class="artist-picture"><img src="images/profile/fukuhara.jpg" style="margin-top: -25%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">吉田真也 / Shinya Yoshida</div>
+                    <div class="artist-picture"><img src="images/profile/yoshida.jpg" style="margin-top: -15%;"></div>
+                </div>
+
+            </div>
         </div>
-        
+
+
+        <div class="margin-empty" style="margin-top: 10%;"></div>
+        <div class="title-box">
+            <div class="title00">
+                <span>作家一覧｜修士１年</span>
+            </div>
+            <div class="title01">
+                <span>内海拓 / </span>
+                <span>笠島久美子 / </span>
+                <span>ジョイス・ラム / </span>
+                <span>孫奎星 / </span>
+                <span>龍村景一 / </span>
+                <span>田中彩 / </span>
+                <span>西村梨緒葉 / </span>
+                <span>林裕人 / </span>
+                <span>松井靖果 / </span>
+                <span>山岸耕輔</span>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="artists">
+
+                <div class="artist-box" href="">
+                    <div class="artist-name">内海拓 / Taku Uchiumi</div>
+                    <div class="artist-picture"><img src="images/profile/uchiumi.jpg" style="margin-top: -35%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">笠島久美子 / Kumiko Kasajima</div>
+                    <div class="artist-picture"><img src="images/profile/kasajima.jpg" style="margin-top: -20%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name">ジョイス・ラム / Joyce Lam</div>
+                    <div class="artist-picture"><img src="images/profile/joyce.jpg" style="margin-top: -15%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #000000;">孫奎星 / Sun Kuixing</div>
+                    <div class="artist-picture"><img src="images/profile/sun.jpg" style="margin-top: -20%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">龍村景一 / Keiichi Tatsumura</div>
+                    <div class="artist-picture"><img src="images/profile/tatsumura.jpg" style="margin-top: -20%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">田中彩 / Aya Tanaka</div>
+                    <div class="artist-picture"><img src="images/profile/tanaka.jpg" style="margin-top: -21%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">西村梨緒葉 / Rioha Nishimura</div>
+                    <div class="artist-picture"><img src="images/profile/nishimura.jpg" style="margin-top: -15%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">林裕人 / Yuto Hayashi</div>
+                    <div class="artist-picture"><img src="images/profile/hayashi.jpg" style="margin-top: -10%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="">
+                    <div class="artist-name" style="color: #ffffff;">松井靖果 / Shizuka Matsui</div>
+                    <div class="artist-picture"><img src="images/profile/matsui.jpg" style="margin-top: -13%;"></div>
+                </div>
+
+
+
+                <div class="artist-box" href="" style="background-color: #000000;">
+                    <div class="artist-name" style="color: #ffffff;">山岸耕輔 / Kosuke Yamagishi</div>
+                    <div class="artist-picture"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="margin-empty"> </div>
     </div>
     </div>
-
-
-    <div class="margin-empty" style="margin-top: 10%;"></div>
-    <div class="title-box">
-        <div class="title00">
-            <span>作家一覧｜修士１年</span>
-        </div>
-        <div class="title01">
-            <span>内海拓 / </span>
-            <span>笠島久美子 / </span>
-            <span>ジョイス・ラム / </span>
-            <span>孫奎星 / </span>
-            <span>龍村景一 / </span>
-            <span>田中彩 / </span>
-            <span>西村梨緒葉 / </span>
-            <span>林裕人 / </span>
-            <span>松井靖果 / </span>
-            <span>山岸耕輔</span>
-        </div>
     </div>
-
-    <div class="middle">
-    <div class="artists">
-        
-        <div class="artist-box" href="">
-                <div class="artist-name">内海拓 / Taku Uchiumi</div>
-                <div class="artist-picture"><img src="images/profile/uchiumi.jpg" style="margin-top: -35%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">笠島久美子 / Kumiko Kasajima</div>
-                <div class="artist-picture"><img src="images/profile/kasajima.jpg" style="margin-top: -20%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name">ジョイス・ラム / Joyce Lam</div>
-                <div class="artist-picture"><img src="images/profile/joyce.jpg" style="margin-top: -15%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #000000;">孫奎星 / Sun Kuixing</div>
-                <div class="artist-picture"><img src="images/profile/sun.jpg" style="margin-top: -20%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">龍村景一 / Keiichi Tatsumura</div>
-                <div class="artist-picture"><img src="images/profile/tatsumura.jpg" style="margin-top: -20%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">田中彩 / Aya Tanaka</div>
-                <div class="artist-picture"><img src="images/profile/tanaka.jpg" style="margin-top: -21%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">西村梨緒葉 / Rioha Nishimura</div>
-                <div class="artist-picture"><img src="images/profile/nishimura.jpg" style="margin-top: -15%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">林裕人 / Yuto Hayashi</div>
-                <div class="artist-picture"><img src="images/profile/hayashi.jpg" style="margin-top: -10%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="">
-                <div class="artist-name" style="color: #ffffff;">松井靖果 / Shizuka Matsui</div>
-                <div class="artist-picture"><img src="images/profile/matsui.jpg" style="margin-top: -13%;"></div>
-        </div>
-        
-
-        
-        <div class="artist-box" href="" style="background-color: #000000;">
-                <div class="artist-name" style="color: #ffffff;">山岸耕輔 / Kosuke Yamagishi</div>
-                <div class="artist-picture"></div>
-        </div>
-        
-    </div></div>
-
-    <div class="margin-empty"> </div>
-    </div>
-    </div>
-</div>
 
     <div class="contact"><span>お問い合わせ　メディア映像教員室</span><br>
         Mail: <a href="nm.exhibition.info@ml.geidai.ac.jp">nm.exhibition.info@ml.geidai.ac.jp</a></div>
