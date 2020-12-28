@@ -28,7 +28,7 @@ $(function() {
 	function currentCheck() {
 		// 現在のスクロール位置を取得
         var windowScrolltop = $(window).scrollTop();
-        console.log(windowScrolltop);
+        // console.log(windowScrolltop);
 		for (var i = 0; i < contentsArr.length; i++) {
 			// 現在のスクロール位置が、配列に格納した開始位置-3と終了位置+3の間にあるものを調べる
 			if( (contentsArr[i][0] -3) <= windowScrolltop && (contentsArr[i][1] +3) >= windowScrolltop) {

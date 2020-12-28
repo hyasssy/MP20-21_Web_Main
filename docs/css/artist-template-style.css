@@ -1,6 +1,5 @@
 .artist-top {
   width: 100%;
-  background-color: red;
 }
 .artist-top img {
   width: 100%;
@@ -19,4 +18,15 @@
 .artist-info-container {
   float: left;
   width: 64%;
+}
+.cv-year {
+  display: inline-block;
+  width: 25%;
+  max-width: 7rem;
+}
+.cv-text {
+  display: inline-block;
+}
+.artist-works img {
+  width: 100%;
 }
