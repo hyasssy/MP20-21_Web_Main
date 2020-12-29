@@ -21,7 +21,9 @@
             var scrollTop = window.pageYOffset;
             if (scrollTop > window.innerHeight) {
                 $('.backStr').css('color', 'rgb(235, 235, 235)');
-                $('.backStr').css('transition', '.5s')
+                $('.backStr').css('transition', '.8s');
+                $('html').css('background-color', 'white');
+                $('html').css('transition', '.8s');
             }
         }
     </script>
@@ -35,9 +37,9 @@
                     h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
             })(document);
     </script>
-    <script type="text/javascript"> //FOUTを防ぐため->カウントダウン表示時に最初XXになってしまうのを隠し、フワッと表示。
+    <script type="text/javascript"> //フェードイン
         setTimeout(function () {
-            $("html").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
+            $("body").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
         }, 000);
     </script>
 
@@ -79,13 +81,15 @@
     </div>
     <div class="page-top" id="top">
         <div class="box">
-            <div class=""><img src="images/teaser_logo_without_bg.svg"></div>
-        </div>
-        <div class="arrow-box">
-            <div class="arrow00">
-                <a href="#title"><img src="images/arrow.svg" class="arrow"></a>
+            <img src="./images/text(仮).png" alt="">
+            <div class="main-visual">
+            </div>
+            <div class="arrow0">
+                <!--とりあえずここだけ仕様変更しました-->
+                <a href="#title"><img src="./images/arrow_white.svg" class="arrow"></a>
             </div>
         </div>
+
         <!-- ナビゲーション -->
         <nav>
             <div id="nv-wrapper">

@@ -66,6 +66,9 @@ html.wf-active,
 html.loading-delay {
   visibility: visible;
 }*/
+html{
+  background: rgb(178, 178, 178);
+}
 html a {
   color: #4498ff;
   transition: 0.3s;
@@ -88,7 +91,6 @@ html {
 }
 
 body {
-  background: rgb(255, 255, 255);
   scrollbar-face-color: #000000;
 }
 ::-webkit-scrollbar {
