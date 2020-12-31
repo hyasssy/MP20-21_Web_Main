@@ -29,8 +29,8 @@ $(function () {
 const _data = {
     osato: {
         id:"_osato",//htmlの入れ込む先のid
-        top_image:"./images/faces/face_osato.png",
-        top_caption_title:"これがタイトル",
+        top_image:"./images/mpworks/1_osato.png",
+        top_caption_title:"セルフィーくん",
         top_caption_year:"2020",
         top_caption_media:"video",
         portrait:"./images/faces/face_osato.png",
@@ -40,14 +40,14 @@ const _data = {
         theme:"制作テーマ制作テーマ制作テーマ制作テーマ制作テーマ制作テーマ制作テーマ制作テーマ制作テーマ制作テーマ",
         cv_year:["2018", "2018", "2020"],
         cv_text:["2018のテキスト", "2018のテキスト2", "2020のテキスト"],
-        works_onshow_image:["./images/faces/face_osato.png"],//トップ以外の展示作品写真
+        works_onshow_image:["./images/works/1_osato.jpeg"],//トップ以外の展示作品写真
         works_onshow_title:["title"],
         works_onshow_year:["year"],
         works_onshow_media:["media"],
-        pastworks_image:["./images/faces/face_osato.png"],
-        pastworks_title:["title"],
-        pastworks_year:["2020"],
-        pastworks_media:["media"],
+        pastworks_image:["./images/works/2_osato.jpeg", "./images/works/3_osato.jpeg"],
+        pastworks_title:["タイトル１", "タイトル２"],
+        pastworks_year:["2020", "2019"],
+        pastworks_media:["media1", "media2"]
 
     },
     otaki: {
@@ -93,6 +93,7 @@ function ArtistPage(artistData){
     // テンプレートのノードを複製
     var clone = document.importNode(content, true);
     // 複製されたテンプレートノード内部の要素取得
+    // var artisttop_img = clone.querySelector("artist-top_img")
     var artisttop = clone.querySelector("artist-top");
     //書き込む内容作成
     var img = document.createElement("img");
@@ -132,13 +133,13 @@ function ArtistPage(artistData){
         var img = document.createElement("img");
         img.src = artistData.works_onshow_image[i];
         artistworks.appendChild(img);
-        artistworks.appendChild(ArtistCaption(artistData.works_onshow_title, artistData.works_onshow_year, artistData.works_onshow_media, true));
+        artistworks.appendChild(ArtistCaption(artistData.works_onshow_title[i], artistData.works_onshow_year[i], artistData.works_onshow_media[i], true));
     }
     for(let i=0;i<artistData.pastworks_image.length;i++){
         var img = document.createElement("img");
         img.src = artistData.pastworks_image[i];
         artistworks.appendChild(img);
-        artistworks.appendChild(ArtistCaption(artistData.pastworks_title, artistData.pastworks_year, artistData.pastworks_media));
+        artistworks.appendChild(ArtistCaption(artistData.pastworks_title[i], artistData.pastworks_year[i], artistData.pastworks_media[i]));
     }
 
     //フラグメント(パーツ入れ)に挿入

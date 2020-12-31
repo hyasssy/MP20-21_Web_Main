@@ -565,12 +565,12 @@ ul li a.current .nav4 {
 
 .modal__content{
   background: #fff;
-  left: 25%;
+  left: 20%;
   /* padding: 40px; */
   position: relative;
   top: 5%;
   /* transform: translate(-50%,-50%); */
-  width: 50%;
+  width: 60%;
   height: 90%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
@@ -587,7 +587,7 @@ ul li a.current .nav4 {
   height: 30px;
   /* background-color: slateblue; */
   bottom: calc(5% + 10px);
-  right: calc(25% + 10px);
+  right: calc(20% + 10px);
 }
 
 .js-modal-close a#closebutton_link img {
@@ -599,7 +599,7 @@ ul li a.current .nav4 {
   padding: 1.6rem;
 }
 
-.mpworks-area {
+/* .mpworks-area {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
@@ -608,17 +608,8 @@ ul li a.current .nav4 {
 .mpworks-area img {
   width: 100%;
   height: auto;
-}
+} */
 
-.caption {
-  /* position: absolute; */
-  width: 100%;
-  height: auto;
-  /* right: calc(0% + 33px); */
-  /* padding: 1rem; */
-  /* background-color: #FFFF00; */
-  /* padding-left: 60%; */
-}
 
 .works-name {
   font-family: a-otf-gothic-bbb-pr6n, sans-serif;
