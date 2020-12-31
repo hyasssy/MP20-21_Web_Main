@@ -3,13 +3,6 @@
 }
 .artist-top {
   width: 100%;
-  /* position: relative;
-  margin-left: 80%;
-  width: 20%;
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
-  font-family: "HiraginoW4";
-  color: black; */
 }
 .artist-introduction {
   overflow: hidden;
@@ -110,4 +103,55 @@
   font-size: 2.25rem;
   font-family: "HiraginoW7";
   color: black;
+}
+
+@media screen and (max-width: 480px) {
+
+.artist-portrait-container {
+  width: 50%;
+  float: left;
+  margin: 0.5px;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.artist-info-container {
+  margin: 0;
+  padding: 0;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.name_modal {
+  font-size: 5vw;
+}
+.info_modal {
+  font-size: 3vw;
+  line-height: 3.5vw;
+}
+
+.gaiyou_modal {
+  font-size: 4vw;
+  line-height: 4.5vw;
+}
+
+.title_modal {
+  font-size: 5vw;
+  line-height: 4.5vw;
+}
+
+.artist-caption {
+  margin-left: 45%;
+  width: 45%;
+  font-size: 2.5vw;
+}
+.artist-caption-annotation {
+  font-size: 2.5vw;
+
+}
+.artist-caption-title {
+  font-size: 5vw;
+
+}
+
 }

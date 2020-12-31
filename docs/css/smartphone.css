@@ -18,15 +18,8 @@
     align-items: flex-end;
   }
   .backStr {
-    position: absolute;
-    display: inline;
-    font-family: "HiraginoW4", sans-serif;
     font-size: 2.5vw;
     line-height: 3.25vw;
-    color: #c8ced1;
-    top: 0%;
-    text-align: center;
-    white-space: nowrap;
   }
   .title00 {
     font-size: 6.5vw;
@@ -148,6 +141,9 @@
   .contact span {
     font-size: 4vw;
   }
+  .arrow0 img {
+    width: 20vw;
+  }
   .arrow00 img {
     width: 100%;
     height: auto;
@@ -155,7 +151,7 @@
     min-width: 10vw;
   }
   .gaiyou {
-    font-size: 3vw;
+    font-size: 3.8vw;
     line-height: 5vw;
     margin-top: 8%;
     margin-bottom: 8%;
@@ -186,10 +182,30 @@
 
   .name {
     font-size: 3vw;
-    
   }
 
+  .middle__artists {
+    width: 100%;
+  }
 
+  .modal__content{
+    background: #fff;
+    left: 0%;
+    width: 100%;
+  }
+  .closebutton-box {
+    right: calc(0% + 10px);
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  ul li {
+    padding-bottom: 1.6vw;
+    padding-right: 0.6vw;
+    /* background-color: cyan; */
+  }
 
 }
 
