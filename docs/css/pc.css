@@ -595,6 +595,7 @@ ul li a.current .nav4 {
   /* background-color: slateblue; */
   bottom: calc(5% + 10px);
   right: calc(20% + 10px);
+  z-index: 50000;
 }
 
 .js-modal-close a#closebutton_link img {
