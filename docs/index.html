@@ -4,7 +4,7 @@
 <head>
     <title>MEDIA PRACTICE 20-21</title>
     <meta name="robots" content="noindex">
-    <link rel="icon" type="image/svg" href="images/favicon.jpg">
+    <link rel="icon" type="image/svg" href="images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/plugin/normalize.css">
@@ -24,6 +24,7 @@
                 $('.backStr').css('transition', '.8s');
                 $('html').css('background-color', 'white');
                 $('html').css('transition', '.8s');
+                $('.logo').css('background-image', 'url(images/logo_black.svg)');
             }
         }
     </script>
@@ -56,22 +57,11 @@
         });
     </script>
 
-    <!-- スライダー -->
-    <!-- <link rel="stylesheet" type="text/css" href="./css/plugin/slick.css">
-    <link rel="stylesheet" type="text/css" href="./css/plugin/slick-theme.css"> -->
-    <!-- モーダルウィンドウjQuery -->
-    <!-- <script src="scripts/template.js"></script> -->
     <script src="scripts/ModalWindow.js"></script>
 
 </head>
 
 <body>
-    <!-- <div id="artists_template"></div>
-    <script>
-        $(function () {
-            $("#artists_template").load("artists/source_m2.html");
-        });
-    </script>-->
     <!-- ページトップ -->
     <div id="bg-container">
         <div id="bg-wrapper">
@@ -81,9 +71,8 @@
     </div>
     <div class="page-top" id="top">
         <div class="box">
-            <img src="./images/text(仮).png" alt="">
-            <div class="main-visual">
-            </div>
+            <div class="logo"></div>
+            <div class="main-visual"></div>
             <div class="arrow0">
                 <!--とりあえずここだけ仕様変更しました-->
                 <a href="#title"><img src="./images/arrow_white.svg" class="arrow"></a>
@@ -115,21 +104,22 @@
     <!-- タイトル -->
     <div id="title">
         <div class="margin-empty"></div>
-        <div class="title-box">
-            <div class="title00">
-                <span>MEDIA PRACTICE 20-21</span><br>
-                <span>東京藝術大学大学院</span><span>映像研究科</span><span>メディア映像専攻</span> <br><span>年次成果発表会</span>
-            </div>
-            <div class="title01">
-                <span>修士課程修了制作展／</span><span>修士一年次成果発表会</span>
-            </div>
-        </div>
-
+       
         <div class="middle">
+            <div class="title-box">
+                <div class="title00">
+                    <span>MEDIA PRACTICE 20-21</span><br>
+                    <span>東京藝術大学大学院</span><span>映像研究科</span><span>メディア映像専攻</span> <br><span>年次成果発表会</span>
+                </div>
+                <div class="title01">
+                    <span>修士課程修了制作展／</span><span>修士一年次成果発表会</span>
+                </div>
+            </div>
+
             <div class="middle-box">
                 <div class="middle-box-container">
 
-                    <div class="details00">開催概要</div>
+                    <div class="title_gaiyou" style="font-size: 3rem;">開催概要</div>
                     <div class="gaiyou-container">
                         <div class="gaiyou-box">
                             <p class="gaiyou">
@@ -164,7 +154,7 @@
 
 
 
-    <div class="margin-empty" style="margin-top: 30%;"></div>
+    <div class="margin-empty" style="margin-top: 5%;"></div>
 
 
 
@@ -174,7 +164,6 @@
         <div class="middle">
             <div class="middle-box">
                 <div class="middle-box-container">
-                    <!-- <p class="details00"> -->
                     <table class="details00" width="99%">
                         <tr>
                             <th>会期</th>
@@ -249,30 +238,32 @@
 
 
     <!-- 作家情報 -->
-    <div class="margin-empty" style="margin-top: 30%;"></div>
-    <div>　</div>
-    <div id="artists">
-        <div class="margin-empty" style="margin-top: 5%;"></div>
-        <div class="title-box">
-            <div class="title00">
-                <span>作家一覧｜修士２年</span>
+    <!-- <div id="artists"> -->
+        <div class="middle" id="artists">
+            <!-- <div class="margin-empty" style="margin-top: 5%;"></div> -->
+                <!-- <div class="margin-empty" style="margin-top: 5%;"></div> -->
+            <div class="middle__artists">
+                <div class="title-box">
+                    <div class="title00">
+                        <span>作家一覧｜修士２年</span>
+                    </div>
+                    <div class="title01">
+                        <span>大里 淳 / </span>
+                        <span>大滝彩加 / </span>
+                        <span>岡千穂 / </span>
+                        <span>古閑慶治 / </span>
+                        <span>小林舞衣 / </span>
+                        <span>椎名悠香 / </span>
+                        <span>宍倉志信 / </span>
+                        <span>志村茉那美 / </span>
+                        <span>瀬古瑞歩 / </span>
+                        <span>平井亨季 / </span>
+                        <span>福原翼 / </span>
+                        <span>吉田真也</span>
+                    </div>
             </div>
-            <div class="title01">
-                <span>大里 淳 / </span>
-                <span>大滝彩加 / </span>
-                <span>岡千穂 / </span>
-                <span>古閑慶治 / </span>
-                <span>小林舞衣 / </span>
-                <span>椎名悠香 / </span>
-                <span>宍倉志信 / </span>
-                <span>志村茉那美 / </span>
-                <span>瀬古瑞歩 / </span>
-                <span>平井亨季 / </span>
-                <span>福原翼 / </span>
-                <span>吉田真也</span>
             </div>
         </div>
-
         <!-- モーダルウィンドウここから -->
 
 
@@ -387,26 +378,34 @@
         </div>
 
 
-        <div class="margin-empty" style="margin-top: 10%;"></div>
-        <div class="title-box">
-            <div class="title00">
-                <span>作家一覧｜修士１年</span>
-            </div>
-            <div class="title01">
-                <span>内海拓 / </span>
-                <span>笠島久美子 / </span>
-                <span>ジョイス・ラム / </span>
-                <span>孫奎星 / </span>
-                <span>龍村景一 / </span>
-                <span>田中彩 / </span>
-                <span>西村梨緒葉 / </span>
-                <span>林裕人 / </span>
-                <span>松井靖果 / </span>
-                <span>山岸耕輔</span>
+        
+
+        <div class="middle">
+            <div class="margin-empty" style="margin-top: 10%;"></div>
+        
+            <div class="middle__artists">
+                <div class="title-box">
+                    <div class="title00">
+                        <span>作家一覧｜修士１年</span>
+                    </div>
+                    <div class="title01">
+                        <span>内海拓 / </span>
+                        <span>笠島久美子 / </span>
+                        <span>ジョイス・ラム / </span>
+                        <span>孫奎星 / </span>
+                        <span>龍村景一 / </span>
+                        <span>田中彩 / </span>
+                        <span>西村梨緒葉 / </span>
+                        <span>林裕人 / </span>
+                        <span>松井靖果 / </span>
+                        <span>山岸耕輔</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="middle">
+
             <div class="artists">
 
                 <div class="artist-box" href="">

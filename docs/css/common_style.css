@@ -70,7 +70,7 @@ html{
   background: rgb(178, 178, 178);
 }
 html a {
-  color: #4498ff;
+  color: #0085FF;
   transition: 0.3s;
 }
 html a:hover {
@@ -101,21 +101,3 @@ body {
   background: rgba(0, 0, 0, 0.9);
   border-radius: 0.25rem;
 }
-
-/* body.fixed {
-  /* position: fixed; */
-/* left: 0; */
-/* }
-
-body.fixed ul li a.current .nav1 {
-  background-color:rgb(0, 0, 0, 0.3);
-}  */
-
-/* html.fixed {
-  position: fixed;
-  left: 0;
-}
-
-html.fixed ul li a.current .nav1 {
-  background-color:rgb(0, 0, 0, 0.3);
-}  */
