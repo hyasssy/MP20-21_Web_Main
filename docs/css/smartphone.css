@@ -4,12 +4,6 @@
     flex: 1;
     display: inline;
   }
-  .box {
-    width: 90%;
-    position: relative;
-    text-align: right;
-    flex: 1;
-  }
   .arrow-box {
     flex: 1;
     display: flex;
@@ -30,7 +24,8 @@
   }
   .title01 {
     color: #000000;
-    font-family: "HiraginoW4", sans-serif;
+    font-family: "HiraginoKG", sans-serif;
+    font-weight: 400;
     font-size: 4.3vw;
     letter-spacing: 0.8px;
     margin-bottom: 10vw;
@@ -43,39 +38,6 @@
     max-width: 400px;
     min-width: 250px;
     margin-bottom: -8vw;
-  }
-  .countdown {
-    color: #000000;
-    font-family: futura-pt, "HiraginoW2", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 0.8px;
-    text-align: left;
-    font-size: 6.5vw;
-    margin-top: 0;
-    margin-left: 0%;
-    margin-bottom: 0%;
-  }
-  .countdown span {
-    font-size: 7.5vw;
-  }
-  .middle-box-01 {
-    position: relative;
-    /*background-color: blue; */
-    width: 95%;
-    height: auto;
-    /* max-width: 900px;
-  min-width: 300px; */
-    margin-top: 15%;
-  }
-  .middle-box-02 {
-    position: relative;
-    overflow: hidden;
-    z-index: 50;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 95%;
-    margin-bottom: -5%;
-    margin-right: 0;
   }
   .details00 {
     position: relative;
@@ -188,36 +150,12 @@
     width: 100%;
   }
 
-  /* .modal__content{
-    background: #fff;
-    left: 0%;
-    width: 100%;
-  }
-  .closebutton-box {
-    right: calc(0% + 10px);
-  } */
-
-  ul {
-    margin-bottom: 0;
-  }
-
-  ul li {
-    padding-bottom: 1.6vw;
-    padding-right: 0.6vw;
-    /* background-color: cyan; */
-  }
-
-}
-
-@media screen and (max-width: 480px), (orientation: portrait) {
-
   .modal__content{
     background: #fff;
-    left: 0%;
-    width: 100%;
+    left: 1rem;
+    width: calc(100% - 2rem);
   }
   .closebutton-box {
     right: calc(0% + 10px);
   }
-
 }

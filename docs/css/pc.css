@@ -24,23 +24,11 @@
   flex-wrap: nowrap;
   justify-content: left;
   align-items: left;
-  /* background-color: crimson; */
 }
-/* .box {
-  width: calc(100vw - 0.5rem);
-  height: 100vh;
-  position: relative;
-  background-color: crimson;
-} */
-.logo {
-  margin: auto;
+#logo {
+  color: white;
   position: absolute;
-  margin-top: 0;
   width: 100%;
-  height: 100%;
-  background-image: url(../images/logo.svg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   z-index: 10;
 }
 .main-visual{
@@ -54,27 +42,64 @@
 }
 @media screen and (orientation: portrait) {
   /* 縦向きの場合のスタイル */
-  .box {
-    width: 100%;
-    height: 100%;
-  }
 
   .main-visual{
     background-image: url(../images/mainvisual_vertical.png);
     background-size: 100% 100%;
   }
 }
-.box img{/*タイトルテキスト*/
-  position:absolute;
-  top: 0;
-  left: 0;
+
+/*ナビゲーション*/
+nav {
+  position: fixed;
+  width: 0%;
+  height: 0%;
+  z-index: 5000;
+}
+
+#nv-wrapper {
   width: 100%;
+  height: 100%;
+}
+
+#nv-wrapper ul {
+  list-style: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding-left: 0px;
+}
+
+#nv-wrapper ul li {
+  padding-bottom: 2rem;
+  padding-right: 0.6rem;
+}
+
+.nav1, .nav2, .nav3, .nav4 {
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+ul li a.current .nav1 {
+  background-color: #F65353;
+}
+ul li a.current .nav2 {
+  background-color: rgb(150, 108, 198);
+}
+ul li a.current .nav3 {
+  background-color: rgb(82, 138, 199);
+}
+ul li a.current .nav4 {
+  background-color: #393939;
 }
 
 .title00 {
   color: #000000;
-  font-family: "HiraginoW7", "HelveticaNeue", sans-serif;
-  font-weight: 700;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 200;
   font-size: 3.5rem;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
@@ -85,7 +110,8 @@
 }
 .title01 {
   color: #000000;
-  font-family: "HiraginoW4", sans-serif;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 100;
   font-size: 2rem;
   letter-spacing: 0.8px;
   margin-bottom: 3rem;
@@ -100,25 +126,7 @@
 .title01 span {
   display: inline-block; /*改行させない*/
 }
-.countdown {
-  color: #000000;
-  font-family: futura-pt, "HiraginoW2", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: 0.8px;
-  text-align: left;
-  font-size: 3.2rem;
-  margin-top: -0.5%;
-  margin-left: -1%;
-  margin-bottom: 0%;
-}
-.countdown span {
-  font-size: 3.7rem;
-}
 
-/*span {
-  display: inline-block;
-}*/
 .arrow-box {
   flex: 1;
   display: flex;
@@ -128,7 +136,7 @@
   flex-wrap: nowrap;
   height: 0;
 }
-.arrow0 {
+.arrow-top {
   position:absolute;
   bottom: 0;
   width: 100%;
@@ -136,26 +144,11 @@
   z-index: 50;
   /* background-color: #0085FF; */
 }
-.arrow0 img {
-  position: static;
-  display: inline-block;
-  width: 10vw;
-  /* max-width: 10rem; */
-  /* min-width: 7rem; */
-}
-.arrow00 {
-  color: #000000;
-  font-family: "HiraginoW4", sans-serif;
-  letter-spacing: 0.8px;
-}
-.arrow00 img {
-  display: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100px;
-  min-width: 10px;
-}
 .arrow {
+  width: 10vw;
+  max-width: 12rem;
+  min-width: 7rem;
+  color: white;
   animation-name: arrow-animation;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -193,6 +186,7 @@
   max-width: 900px;
   min-width: 300px;
   margin-top: 3%;
+  margin-bottom: 10rem;
   /* margin-left: 0.6rem; */
   /* margin-right: 0.6rem; */
 }
@@ -200,7 +194,8 @@
 .backStr {
   position: absolute;
   display: inline;
-  font-family: "HiraginoW4", sans-serif;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 2.5rem;
   color: rgb(178, 178, 178);
@@ -233,23 +228,23 @@
   padding: 1.5rem;
 }
 .title_gaiyou {
+  top: 0.3rem;
+  left: 0.3rem;
   position: relative;
   z-index: 100;
   color: #000000;
-  font-family: "HiraginoW7";
-  font-weight: 500;
-  font-size: 2.5rem;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
   letter-spacing: 0.65px;
-  line-height: 25px;
-  margin-top: 0rem;
   text-align: left;
 }
 .details00 {
   position: relative;
   z-index: 100;
   color: #000000;
-  font-family: "HiraginoW4";
-  font-weight: 500;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 300;
   font-size: 2rem;
   letter-spacing: 0.65px;
   line-height: 25px;
@@ -291,8 +286,8 @@
 }
 .details01 {
   color: #000000;
-  font-family: "HiraginoW2";
-  font-weight: 400;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 200;
   font-size: 1.5rem;
   letter-spacing: 0.85px;
   /* margin-top: 10%; */
@@ -302,7 +297,8 @@
   position: relative;
   z-index: 100;
   color: #000000;
-  font-family: "HiraginoW2";
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 200;
   letter-spacing: 0.5px;
   font-size: 1.5rem;
   margin-top: 2rem;
@@ -311,8 +307,8 @@
 }
 .details01-s {
   color: #000000;
-  font-family: "HiraginoW2";
-  font-weight: 400;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 200;
   font-size: 1.5rem;
   letter-spacing: 1.25px;
   margin-left: 1rem;
@@ -326,8 +322,8 @@
 }
 .contact {
   color: #000000;
-  font-family: "HiraginoW2";
-  font-weight: 400;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 200;
   font-size: 1.25rem;
   letter-spacing: 0.95px;
   margin-top: 10%;
@@ -366,7 +362,6 @@ th {
 .gaiyou-container{
   position: relative;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -377,19 +372,28 @@ th {
   width: 85%;
   height: auto;
 }
-.gaiyou {
-  position: relative;
-  z-index: 100;
-  color: #000000;
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 1.75rem;
-  line-height: 3rem;
-  padding-right: 0.6rem;
-  text-align: justify;
+.gaiyou-box p{
   margin-top: 5%;
   margin-bottom: 5%;
+  padding-right: 0.6rem;
+}
+.gaiyou {
+  position: relative;
+  color: rgb(84, 89, 90);
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  letter-spacing: 0px;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  text-align: justify;
   text-indent: 1rem;
+}
+
+.artists-header{
+  width: 99%;
+  max-width: 900px;
+  min-width: 300px;
+  margin-top: 3%;
+  margin-bottom: -6rem;
 }
 
 .middle__artists {
@@ -465,85 +469,6 @@ th {
   color: #000000;
 }
 
-/* #popup{
-  width:90%;
-  height: 90%;
-  display:none;
-  position:fixed;
-  top:50%;
-  left:50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.9);
-  max-width: 1500px;
-  min-width: 300px;
-  margin-bottom: -5%;
-  margin-right: 0;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  box-shadow: 6px 6px #000000;
-}
-input[type="checkbox"]{
-  display:none;
-}
-/*checkboxがcheckの状態になったらpopupを表示させる*/
-/* input[type="checkbox"]:checked + #popup{
-  display:block;
-} */
-
-
-
-nav {
-  position: fixed;
-  width: 0%;
-  height: 0%;
-  z-index: 5000;
-}
-
-#nv-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-ul {
-  list-style: none;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  /* background-color: darkcyan; */
-  padding-left: 0px;
-}
-
-ul li {
-  padding-bottom: 1.6rem;
-  padding-right: 0.6rem;
-  /* background-color: cyan; */
-}
-
-.nav1, .nav2, .nav3, .nav4 {
-  position: relative;
-  background-color: rgb(0, 0, 0, 0.3);
-  border-radius: 100%;
-  width: 25px;
-  height: 25px;
-}
-
-
-ul li a.current .nav1 {
-  background-color: #F65353;
-}
-ul li a.current .nav2 {
-  background-color: #9B00FF;
-}
-ul li a.current .nav3 {
-  background-color: #0085FF;
-}
-ul li a.current .nav4 {
-  background-color: #393939;
-}
-
 
 .js-modal-open {
   width: 100%;
@@ -572,12 +497,12 @@ ul li a.current .nav4 {
 
 .modal__content{
   background: #fff;
-  left: 20%;
+  left: 10%;
   /* padding: 40px; */
   position: relative;
   top: 5%;
   /* transform: translate(-50%,-50%); */
-  width: 60%;
+  width: 80%;
   height: 90%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
@@ -592,9 +517,8 @@ ul li a.current .nav4 {
   position: fixed;
   width: 30px;
   height: 30px;
-  /* background-color: slateblue; */
   bottom: calc(5% + 10px);
-  right: calc(20% + 10px);
+  right: calc(10% + 10px);
   z-index: 50000;
 }
 
@@ -602,143 +526,5 @@ ul li a.current .nav4 {
   position: fixed;
   width: 30px;
   height: auto;
-  /* bottom: 0;
-  right: 0; */
   padding: 1.6rem;
-}
-
-/* .mpworks-area {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.mpworks-area img {
-  width: 100%;
-  height: auto;
-} */
-
-
-.works-name {
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-  letter-spacing: 0.65px;
-  font-size: 1.5rem;
-  color: #000000;
-  right: 0;
-  margin-left: 70%;
-  /* margin-bottom: 20%; */
-}
-.works-name span {
-  font-size: 2.25rem;
-  font-weight: 900;
-  margin-left: -0.25rem;
-}
-
-.wrapper__0 {
-  width: 100%;
-  height: 100%;
-}
-
-.face-area {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90%;
-  height: auto;
-  /* background-color: aquamarine; */
-  margin: 5%;
-  margin-top: -3%;
-  /* overflow: hidden; */
-  /* flex: 9; */
-}
-
-.face-area img {
-  width: 190px;
-  height: auto;
-  margin-bottom: 1.5rem;
-}
-
-.name {
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-  letter-spacing: 0.65px;
-  font-size: 2.75rem;
-  font-weight: 900;
-  color: #000000;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-.name_info {
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-  letter-spacing: 0.65px;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  /* font-weight: 900; */
-  color: #000000;
-  margin-top: 1rem;
-  margin-left: 0.1rem;
-}
-
-.text-area {
-  width: 80%;
-  height: auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-bottom: 5%;
-  margin-top: 2%;
-  /* background-color: aquamarine; */
-  /* margin-left: 5%; */
-  /* margin-top: 5%; */
-}
-
-.midashi {
-  color: #000000;
-  font-family: "HiraginoW4", sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: 0.8px;
-  margin-top: 0.5rem;
-}
-
-.texts {
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-  letter-spacing: 0.65px;
-  font-size: 1.5rem;
-  color: #000000;
-  margin-bottom: 10%;
-}
-
-.texts.cv {
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
-  /* margin-left: -1.5rem; */
-}
-
-.text-area table {
-  margin: 0 0 0 0;
-  width: 110%;
-}
-
-.text-area td {
-  padding-right: 1.5rem;
-}
-
-.text-area td span {
-  font-weight: 900;
-}
-
-.kakoworks-area {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-color: #2E3192;
-  /* margin: 0 0 0 0; */
-  /* margin-left: -1.5rem; */
-  /* margin-bottom: 2rem; */
-}
-.kakoworks-area img {
-  flex: 1;
-  width: 100%;
-  height: auto;
 }

@@ -1,21 +1,7 @@
 /*共通CSS*/
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
-@font-face {
-  font-family: "Osaka";
-  src: url(../fonts/Osaka.ttf);
-}
-@font-face {
-  font-family: "Moon";
-  src: url(../fonts/MoonLight.otf);
-}
-@font-face {
-  font-family: "AppliMincho";
-  src: url(../fonts/AppliMincho.otf);
-}
-@font-face {
-  font-family: "HiraginoW1";
-  src: url(../fonts/Hiragino_W1.ttc);
-}
+
+
 @font-face {
   font-family: "Futura";
   src: url(../fonts/Futura-Medium-01.ttf);
@@ -27,16 +13,49 @@
   font-style: italic;
 }
 @font-face {
-  font-family: "HiraginoW4";
-  src: url(../fonts/Hiragino_W4.ttc);
+  font-family: "HiraginoKG";
+  src: url(../fonts/Hiragino_W1.ttc);
+  font-weight: 100;
 }
 @font-face {
-  font-family: "HiraginoW2";
+  font-family: "HiraginoKG";
   src: url(../fonts/Hiragino_W2.ttc);
+  font-weight: 200;
 }
 @font-face {
-  font-family: "HiraginoW7";
+  font-family: "HiraginoKG";
+  src: url(../fonts/Hiragino_W3.ttc);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "HiraginoKG";
+  src: url(../fonts/Hiragino_W4.ttc);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HiraginoKG";
+  src: url(../fonts/Hiragino_W5.ttc);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "HiraginoKG";
+  src: url(../fonts/Hiragino_W6.ttc);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "HiraginoKG";
   src: url(../fonts/Hiragino_W7.ttc);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "HiraginoKG";
+  src: url(../fonts/Hiragino_W8.ttc);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "HiraginoKG";
+  src: url(../fonts/Hiragino_W9.ttc);
+  font-weight: 900;
 }
 @font-face {
   font-family: "HelveticaNeue";
@@ -59,13 +78,6 @@
   font-weight: 500;
 }
 
-/*html { FOUTを防ぐためだが、もっと強引な実装をしたため不要。
-  visibility: hidden;
-}
-html.wf-active,
-html.loading-delay {
-  visibility: visible;
-}*/
 html{
   background: rgb(178, 178, 178);
 }
@@ -100,4 +112,8 @@ body {
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.9);
   border-radius: 0.25rem;
+}
+
+svg{/*svgの色をcolorプロパティを参照させる。*/
+  fill: currentColor;
 }
