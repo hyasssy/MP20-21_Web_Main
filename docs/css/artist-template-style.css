@@ -59,8 +59,8 @@
 }
 .artist-text p{
   font-size: 1.5rem;
-  font-family: a-otf-gothic-bbb-pr6n;
-  font-weight: 100;
+  font-family: "Futura", a-otf-gothic-bbb-pr6n;/*Futuraもう一つ細いほうがスマート*/
+  font-weight: 400;
   font-size: 3rem;
   color: black;
 }
@@ -75,7 +75,7 @@
 }
 #artist-theme, .cv-year, .cv-text{
   color: rgb(84, 89, 90);
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  font-family: "GillSans", a-otf-gothic-bbb-pr6n, sans-serif;
   letter-spacing: 0px;
   font-size: 1.75rem;
   line-height: 3rem;
@@ -112,13 +112,13 @@
 .artist-caption-title {
   font-size: 2.25rem;
   font-family: a-otf-futo-go-b101-pr6n;
-  font-weight: 700;
+  font-weight: 500;
   color: black;
   padding-bottom: 1.5rem;
 }
 .artist-caption-info{/*year / media / 出展*/
   font-size: 1.6rem;
-  font-family: "HiraginoKG";
+  font-family: "GillSans", "HiraginoKG";/*futuraいれたい細いやつ*/
   font-weight: 100;
   padding-top: 0.1rem;
 }

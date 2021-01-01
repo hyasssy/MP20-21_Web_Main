@@ -1,7 +1,16 @@
 /*共通CSS*/
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 
-
+@font-face {
+  font-family: "GillSans";
+  src: url(../fonts/GillSans-Light-08.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "GillSans";
+  src: url(../fonts/GillSans-01.ttf);
+  font-weight: 400;
+}
 @font-face {
   font-family: "Futura";
   src: url(../fonts/Futura-Medium-01.ttf);
@@ -14,58 +23,33 @@
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W1.ttc);
+  src: url(../fonts/HiraKakuStdN-W0-AlphaNum-01.otf);
   font-weight: 100;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W2.ttc);
+  src: url(../fonts/HiraKakuProN-W2-AlphaNum-01.otf);
   font-weight: 200;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W3.ttc);
+  src: url(../fonts/HiraKakuProN-W3-AlphaNum-01.otf);
   font-weight: 300;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W4.ttc);
+  src: url(../fonts/HiraKakuProN-W4-AlphaNum-01.otf);
   font-weight: 400;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W5.ttc);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W6.ttc);
+  src: url(../fonts/HiraKakuProN-W6-AlphaNum-01.otf);
   font-weight: 600;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W7.ttc);
+  src: url(../fonts/HiraKakuStdN-W7-AlphaNum-01.otf);
   font-weight: 700;
-}
-@font-face {
-  font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W8.ttc);
-  font-weight: 800;
-}
-@font-face {
-  font-family: "HiraginoKG";
-  src: url(../fonts/Hiragino_W9.ttc);
-  font-weight: 900;
-}
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url(../fonts/HelveticaNeue-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url(../fonts/HelveticaNeue-01.ttf);
-  font-weight: 400;
 }
 @font-face {
   font-family: "HelveticaNeue";
@@ -74,8 +58,18 @@
 }
 @font-face {
   font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-01.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HelveticaNeue";
   src: url(../fonts/HelveticaNeue-Medium-11.ttf);
   font-weight: 500;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
+  font-weight: 700;
 }
 
 html{
