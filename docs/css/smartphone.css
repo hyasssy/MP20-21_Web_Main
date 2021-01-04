@@ -150,7 +150,7 @@
     width: 100%;
   }
 
-  .modal__content{
+  .modal-content{
     background: #fff;
     left: 1rem;
     width: calc(100% - 2rem);

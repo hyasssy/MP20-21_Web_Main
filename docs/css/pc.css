@@ -485,7 +485,7 @@ th {
   z-index: 999999;
   overflow: hidden;
 }
-.modal__bg {
+.modal-bg {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -498,7 +498,7 @@ th {
   /* z-index: 6500; */
 }
 
-.modal__content {
+.modal-content {
   background: #fff;
   left: 10%;
   /* padding: 40px; */
