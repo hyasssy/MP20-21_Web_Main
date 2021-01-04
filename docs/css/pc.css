@@ -31,19 +31,19 @@
   width: 100%;
   z-index: 10;
 }
-.main-visual{
+.main-visual {
   margin: auto;
   position: absolute;
   width: 100%;
   height: 100%;
   background-image: url(../images/mainvisual.png);
-  background-size: 100% 100%;/*100%をautoにすると、画像の縦横比固定されるが、マージンの設定する必要あり。*/
+  background-size: 100% 100%; /*100%をautoにすると、画像の縦横比固定されるが、マージンの設定する必要あり。*/
   background-repeat: no-repeat;
 }
 @media screen and (orientation: portrait) {
   /* 縦向きの場合のスタイル */
 
-  .main-visual{
+  .main-visual {
     background-image: url(../images/mainvisual_vertical.png);
     background-size: 100% 100%;
   }
@@ -75,16 +75,19 @@ nav {
   padding-right: 0.6rem;
 }
 
-.nav1, .nav2, .nav3, .nav4 {
+.nav1,
+.nav2,
+.nav3,
+.nav4 {
   position: relative;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgba(120, 120, 120, 0.7);
   border-radius: 100%;
   width: 40px;
   height: 40px;
 }
 
 ul li a.current .nav1 {
-  background-color: #F65353;
+  background-color: #f65353;
 }
 ul li a.current .nav2 {
   background-color: rgb(150, 108, 198);
@@ -137,7 +140,7 @@ ul li a.current .nav4 {
   height: 0;
 }
 .arrow-top {
-  position:absolute;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -268,7 +271,8 @@ ul li a.current .nav4 {
   width: 95%;
   table-layout: fixed;
 }
-.details00 td, th {
+.details00 td,
+th {
   padding: 0 0 0 0;
 }
 
@@ -359,7 +363,7 @@ th {
   white-space: nowrap;
 }
 
-.gaiyou-container{
+.gaiyou-container {
   position: relative;
   width: 100%;
   display: flex;
@@ -368,11 +372,11 @@ th {
   justify-content: center;
   align-items: center;
 }
-.gaiyou-box{
+.gaiyou-box {
   width: 85%;
   height: auto;
 }
-.gaiyou-box p{
+.gaiyou-box p {
   margin-top: 5%;
   margin-bottom: 5%;
   padding-right: 0.6rem;
@@ -388,7 +392,7 @@ th {
   text-indent: 1rem;
 }
 
-.artists-header{
+.artists-header {
   width: 99%;
   max-width: 900px;
   min-width: 300px;
@@ -410,7 +414,7 @@ th {
   /* background-color: cyan; */
 }
 
-.artists{
+.artists {
   position: relative;
   margin-top: 0.5rem;
   width: 80%;
@@ -459,7 +463,7 @@ th {
   z-index: -0.5;
 }
 
-.artist-name{
+.artist-name {
   font-family: a-otf-midashi-go-mb31-pr6n, "HelveticaNeue", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -469,11 +473,10 @@ th {
   color: #000000;
 }
 
-
 .js-modal-open {
   width: 100%;
 }
-.modal{
+.modal {
   display: none;
   height: 100vh;
   position: fixed;
@@ -482,20 +485,20 @@ th {
   z-index: 999999;
   overflow: hidden;
 }
-.modal__bg{
+.modal__bg {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   position: fixed;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   height: 100vh;
   width: 100%;
   /* z-index: 6500; */
 }
 
-.modal__content{
+.modal__content {
   background: #fff;
   left: 10%;
   /* padding: 40px; */
