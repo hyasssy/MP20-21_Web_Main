@@ -25,6 +25,10 @@
   float: left;
   margin: 2rem;
 }
+.artist-portrait-container img {
+border-radius: 95%/100%;
+}
+
 .artist-info-container {
   width: 64%;
   height: 50%;
@@ -35,7 +39,7 @@
 #artist-name{
   font-size: 1.5rem;
   font-family: "HiraginoKG";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 3rem;
   color: black;
 }
@@ -53,12 +57,14 @@
 }
 
 .artist-text{
-  padding: 9rem 5rem;
+  font-family: "HiraginoKG";
+  font-weight: 200;
+  padding: 5rem 5rem;
   max-width: 50rem;
 }
 .artist-text p{
   font-size: 1.5rem;
-  font-family: "futura-pt", "a-otf-gothic-bbb-pr6n";/*Futuraもう一つ細くした*/
+  font-family: "futura-pt", "HiraginoKG";/*Futuraもう一つ細くした*/
   font-weight: 300;
   font-size: 3rem;
   color: black;
@@ -94,14 +100,15 @@
   max-width: 35%;
   letter-spacing: 0.5px;
   color: rgb(84, 89, 90);
-  margin-bottom: 20rem;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
 }
 .artist-caption-past {
   position: relative;
   display: inline-block;
-
   width: calc(30% - 0.6rem);
   margin-left: 0.6rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.5px;
   color: rgb(84, 89, 90);
 }
@@ -112,7 +119,6 @@
   font-size: 2.25rem;
   font-family: a-otf-futo-go-b101-pr6n;
   font-weight: 500;
-  color: black;
   padding-bottom: 1.5rem;
 }
 .artist-caption-info{/*year / media / 出展*/

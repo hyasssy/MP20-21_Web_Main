@@ -23,32 +23,32 @@
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/HiraKakuStdN-W0-AlphaNum-01.otf);
+  src: url(../fonts/HiraginoKG-W0.ttc);
   font-weight: 100;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/HiraKakuProN-W2-AlphaNum-01.otf);
+  src: url(../fonts/HiraginoKG-W2.ttc);
   font-weight: 200;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/HiraKakuProN-W3-AlphaNum-01.otf);
+  src: url(../fonts/HiraginoKG-W3.ttc);
   font-weight: 300;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/HiraKakuProN-W4-AlphaNum-01.otf);
+  src: url(../fonts/HiraginoKG-W4.ttc);
   font-weight: 400;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/HiraKakuProN-W6-AlphaNum-01.otf);
+  src: url(../fonts/HiraginoKG-W6.ttc);
   font-weight: 600;
 }
 @font-face {
   font-family: "HiraginoKG";
-  src: url(../fonts/HiraKakuStdN-W7-AlphaNum-01.otf);
+  src: url(../fonts/HiraginoKG-W7.ttc);
   font-weight: 700;
 }
 @font-face {

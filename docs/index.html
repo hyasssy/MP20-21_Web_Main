@@ -468,7 +468,7 @@
             </div>
 
             <div class="middle-box">
-                <div class="title_gaiyou">開催概要</div>
+                <div class="title00">開催概要</div>
                 <div class="middle-box-container">
                     <div class="gaiyou-container">
                         <div class="gaiyou-box">
@@ -521,7 +521,7 @@
                         </tr>
                         <tr>
                             <th>時間</th>
-                            <th>11:00 ― 19:00　<span id="details00_detail">※ 最終入場は18:30まで</span></th>
+                            <th>11:00 ― 19:00　<span id="details00-detail">※ 最終入場は18:30まで</span></th>
                         </tr>
                         <tr>
                             <th>入場</th>
@@ -589,12 +589,12 @@
 
     <!-- 作家情報 -->
     <div class="middle" id="artists">
-        <div class="middle__artists">
+        <div class="middle-artists">
             <div class="artists-header">
                 <div class="title00">
                     <span>作家一覧｜修士２年</span>
                 </div>
-                <div class="title01">
+                <div class="artists-header-namelist">
                     <span>大里 淳 / </span>
                     <span>大滝彩加 / </span>
                     <span>岡千穂 / </span>
@@ -616,8 +616,9 @@
     <div id="osato" class="modal js-modal">
         <div class="modal-bg js-modal-close"></div>
         <div class="modal-content">
-            <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img
-                        src="images/closebutton.svg"></a></div>
+            <div class="closebutton">
+              <a class="js-modal-close" href="" id="closebutton-link"><img src="images/closebutton.svg"></a>
+            </div>
             <div id="_osato"></div>
         </div>
     </div>
@@ -625,8 +626,9 @@
     <div id="otaki" class="modal js-modal">
         <div class="modal-bg js-modal-close"></div>
         <div class="modal-content">
-            <div class="closebutton-box"><a class="js-modal-close" href="" id="closebutton_link"><img
-                        src="images/closebutton.svg"></a></div>
+            <div class="closebutton">
+              <a class="js-modal-close" href="" id="closebutton-link"><img src="images/closebutton.svg"></a>
+            </div>
             <div id="_otaki"></div>
         </div>
     </div>
@@ -721,12 +723,12 @@
     <div class="middle">
         <div class="margin-empty" style="margin-top: 10%;"></div>
 
-        <div class="middle__artists">
+        <div class="middle-artists">
             <div class="artists-header">
                 <div class="title00">
                     <span>作家一覧｜修士１年</span>
                 </div>
-                <div class="title01">
+                <div class="artists-header-namelist">
                     <span>内海拓 / </span>
                     <span>笠島久美子 / </span>
                     <span>ジョイス・ラム / </span>
@@ -830,14 +832,20 @@
     </div>
     </div>
 
-    <div class="contact"><span>お問い合わせ　メディア映像教員室</span><br>
-        Mail: <a href="nm.exhibition.info@ml.geidai.ac.jp">nm.exhibition.info@ml.geidai.ac.jp</a></div>
+    <div class="middle">
+      <div class="contact-container">
+      <div class="contact">
+          お問い合わせ　メディア映像教員室<br>
+          Mail: <a href="nm.exhibition.info@ml.geidai.ac.jp">nm.exhibition.info@ml.geidai.ac.jp</a>
+        </div>
+      </div>
+    </div>
 
     <div class="copyright">©︎MEDIA PRACTICE 20-21</div>
 
     <script type="text/javascript">
         $('.modal-content').css('height', $(window).height() * 0.9);
-        $('.closebutton-box').css('bottom', $(window).height() * 0.05 + 10);
+        // $('.closebutton-box').css('bottom', $(window).height() * 0.05 + 10);
     </script>
 
 </body>
