@@ -520,7 +520,6 @@ th {
   position: fixed;
   width: 30px;
   height: 30px;
-  bottom: calc(5% + 10px);
   right: calc(10% + 10px);
   z-index: 50000;
 }

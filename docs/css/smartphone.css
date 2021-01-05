@@ -156,6 +156,6 @@
     width: calc(100% - 2rem);
   }
   .closebutton-box {
-    right: calc(0% + 10px);
+    right: calc(0% + 20px);
   }
 }
