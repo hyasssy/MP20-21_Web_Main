@@ -844,8 +844,10 @@
     <div class="copyright">©︎MEDIA PRACTICE 20-21</div>
 
     <script type="text/javascript">
-        $('.modal-content').css('height', $(window).height() * 0.9);
-        // $('.closebutton-box').css('bottom', $(window).height() * 0.05 + 10);
+          if (window.matchMedia( "(max-width: 480px)" ).matches) {
+            $('.modal-content').css('height', $(window).height() * 0.9);
+            // closeボタンを常にmodal-content内の右下に表示させたい…………
+          }
     </script>
 
 </body>
