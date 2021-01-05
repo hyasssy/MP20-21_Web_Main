@@ -151,7 +151,11 @@
     left: 1rem;
     width: calc(100% - 2rem);
   }
+  .closebutton {
+    text-align: right;
+    padding: 5px;
+  }
   .modal-content .closebutton img {
-    right: calc(0% + 20px);
+    position: static;
   }
 }
