@@ -35,23 +35,8 @@
     font-size: 3vw;
     display: inline-block;
   }
-  .details01-s {
-    font-size: 3vw;
-    letter-spacing: 0.85px;
-    margin-bottom: -0.5vw;
-    line-height: 4vw;
-  }
-  .map {
-    margin-top: -5px;
-  }
-  .details01 {
-    font-size: 2.75vw;
-    margin-top: 10%;
-    margin-right: 10%;
-  }
-  .notes {
-    font-size: 4vw;
-    line-height: 4.75vw;
+  .notes{
+    font-size: 2.7vw;
   }
   .margin-empty {
     margin-top: 40vw;
