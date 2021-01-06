@@ -149,13 +149,16 @@
   .modal-content{
     background: #fff;
     left: 1rem;
-    width: calc(100% - 2rem);
+    width: calc(100vw - 2rem);
+    top: 1rem;
+    height: calc(100vh - 4rem);
   }
-  .closebutton {
+  /* .closebutton {
     text-align: right;
     padding: 5px;
-  }
+  } */
   .modal-content .closebutton img {
-    position: static;
+    right: 1.6rem;
+    bottom: 3.6rem;
   }
 }
