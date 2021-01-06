@@ -64,8 +64,8 @@ border-radius: 95%/100%;
 }
 .artist-text p{
   font-size: 1.5rem;
-  font-family: "futura-pt", "HiraginoKG";/*Futuraもう一つ細くした*/
-  font-weight: 300;
+  font-family: "GillSans", "HiraginoKG"; /*Futuraもう一つ細くした*/
+  font-weight: 400;
   font-size: 3rem;
   color: black;
 }
@@ -81,9 +81,10 @@ border-radius: 95%/100%;
 #artist-theme, .cv-year, .cv-text{
   color: rgb(84, 89, 90);
   font-family: "GillSans", "a-otf-gothic-bbb-pr6n";
+  font-weight: 400;
   letter-spacing: 0px;
   font-size: 1.75rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
   text-align: justify;
 }
 

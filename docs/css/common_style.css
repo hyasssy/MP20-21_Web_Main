@@ -43,6 +43,11 @@
 }
 @font-face {
   font-family: "HiraginoKG";
+  src: url(../fonts/HiraginoKG-W5.ttc);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "HiraginoKG";
   src: url(../fonts/HiraginoKG-W6.ttc);
   font-weight: 600;
 }
