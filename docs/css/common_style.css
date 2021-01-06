@@ -22,8 +22,13 @@
   font-style: italic;
 }
 @font-face {
-  font-family: "HiraginoKG";
+  font-family: "HiraginoKGW0";
   src: url(../fonts/HiraginoKG-W0.ttc);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "HiraginoKG";
+  src: url(../fonts/HiraginoKG-W1.ttc);
   font-weight: 100;
 }
 @font-face {
@@ -72,11 +77,11 @@
   font-weight: 700;
 }
 
-html{
+html {
   background: rgb(178, 178, 178);
 }
 html a {
-  color: #0085FF;
+  color: #0085ff;
   transition: 0.3s;
 }
 html a:hover {
@@ -108,6 +113,7 @@ body {
   border-radius: 0.25rem;
 }
 
-svg{/*svgの色をcolorプロパティを参照させる。*/
+svg {
+  /*svgの色をcolorプロパティを参照させる。*/
   fill: currentColor;
 }
