@@ -133,6 +133,32 @@ border-radius: 95%/100%;
 
 /* スマホ */
 @media screen and (max-width: 480px){
+
+  .artist-introduction {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .artist-portrait-container {
+    width: 40%;
+    margin: 0.6rem;
+  }
+  .artist-info-container {
+    width: 60%;
+    height: 50%;
+    letter-spacing: 0.5px;
+    padding: 0.6rem;
+  }
+  .artist-text{
+    padding: 0.6rem 0.6rem;
+  }
+  .artist-caption {
+    max-width: 60%;
+    margin-bottom: 2rem;
+  }
+  .artist-caption-past {
+    margin-bottom: 40px;
+  }
+
 /*
 .artist-portrait-container {
   width: 50%;

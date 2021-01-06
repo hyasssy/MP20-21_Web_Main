@@ -19,85 +19,50 @@
     font-size: 6.5vw;
   }
   .title01 {
-    color: #000000;
-    font-family: "HiraginoKG", sans-serif;
-    font-weight: 400;
     font-size: 4.3vw;
-    letter-spacing: 0.8px;
-    margin-bottom: 10vw;
+    /* margin-bottom: 5vw; */
   }
-  .title01 img {
-    display: block;
-    margin: auto;
-    height: auto;
-    width: 100%;
-    max-width: 400px;
-    min-width: 250px;
-    margin-bottom: -8vw;
+  .theme-title {
+    font-size: 6.5vw;
   }
   .details00 {
-    position: relative;
-    z-index: 100;
     color: #000000;
-    font-family: a-otf-futo-go-b101-pr6n, sans-serif;
-    font-weight: 500;
-    font-size: 3.75vw;
-    letter-spacing: 0.65px;
-    line-height: 4.95vw;
-    margin-top: 0rem;
+    font-size: 4vw;
+    line-height: 6vw;
   }
   #details00-detail {
-    position: relative;
-    z-index: 100;
-    color: #000000;
-    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
     letter-spacing: 0.65px;
     font-size: 3vw;
     display: inline-block;
   }
   .details01-s {
-    color: #000000;
-    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-    font-weight: 400;
-    font-size: 2.75vw;
+    font-size: 3vw;
     letter-spacing: 0.85px;
     margin-bottom: -0.5vw;
-    line-height: 3.5vw;
-  }
-  .details01-s span {
-    font-family: a-otf-futo-go-b101-pr6n, sans-serif;
-    font-weight: 500;
+    line-height: 4vw;
   }
   .map {
-    position: relative;
-    z-index: 100;
     margin-top: -5px;
   }
   .details01 {
-    color: #000000;
-    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-    font-weight: 400;
     font-size: 2.75vw;
-    letter-spacing: 0.85px;
     margin-top: 10%;
     margin-right: 10%;
   }
   .notes {
-    font-size: 2.75vw;
+    font-size: 4vw;
+    line-height: 4.75vw;
   }
   .margin-empty {
     margin-top: 40vw;
   }
-  .copyright {
-    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-    color: #000000;
-    text-align: center;
+  .sns img {
+    width: 100%;
+    min-width: 35px;
+    margin-right: 0.1rem;
   }
   .contact {
-    font-size: 3vw;
-  }
-  .contact span {
-    font-size: 4vw;
+    font-size: 3.75vw;
   }
   .arrow0 img {
     width: 20vw;
@@ -119,10 +84,8 @@
     max-width: 25px;
     margin-right: 0.1rem;
   }
-  .artists{
-    width: 99%;
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
+  .artists-header-namelist {
+    font-size: 4.3vw;
   }
   .artist-box {
     position: relative;
@@ -135,16 +98,17 @@
     align-items: left;
     overflow: hidden;
     margin-bottom: 0.6rem;
-    /* background-color: blue; */
+  }
+  .artist-name {
+    font-size: 6vw;
+    margin-top: 0.1vw;
   }
 
   .name {
     font-size: 3vw;
   }
 
-  .middle-artists {
-    width: 100%;
-  }
+
 
   .modal-content{
     background: #fff;
@@ -160,5 +124,17 @@
   .modal-content .closebutton img {
     right: 1.6rem;
     bottom: calc(20vh - 0.4rem);
+  }
+}
+
+/* ipadサイズ調整 */
+@media screen and (max-width: 768px) {
+  .middle-artists {
+    width: 100%;
+  }
+  .artists{
+    width: 99%;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
   }
 }

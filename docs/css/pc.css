@@ -120,13 +120,6 @@ ul li a.current .nav4 {
   letter-spacing: 0.8px;
   margin-bottom: 3rem;
 }
-.title01 img {
-  display: block;
-  margin: auto;
-  height: auto;
-  width: 100%;
-  margin-bottom: -3.5rem;
-}
 .title01 span {
   display: inline-block; /*改行させない*/
 }
@@ -274,7 +267,7 @@ ul li a.current .nav4 {
   position: relative;
   z-index: 100;
   color: #000000;
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  /* font-family: a-otf-gothic-bbb-pr6n, sans-serif; */
   letter-spacing: 0.65px;
   font-size: 1.5rem;
 }
