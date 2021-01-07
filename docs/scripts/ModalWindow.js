@@ -9,7 +9,7 @@ $(function () {
             // https://imasashi.net/modal-window_bg-fixed.html
             $(modal).fadeIn();
             // モーダルウィンドウスクロール位置リセット
-            $('.modal__content').scrollTop(0);
+            $('.modal-content').scrollTop(0);
             return false;
         });
     });
@@ -24,7 +24,8 @@ $(function () {
 //モーダルの選択が1回目かチェック
 let flags = {
     _osato: false,
-    _otaki: false
+    _otaki: false,
+    _oka: false
 }
 function ArtistPage(artistData) {
     //フラグ管理
