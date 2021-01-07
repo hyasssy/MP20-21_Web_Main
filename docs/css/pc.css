@@ -222,16 +222,17 @@ ul li a.current .nav4 {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   box-shadow: 6px 6px #000000;
+  padding: 1.5rem;
 }
-.middle-box-container {
+/* .middle-box-container {
   width: 100%;
   height: auto;
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
   z-index: 50;
   /* background-color:tomato; */
-  padding: 1.5rem;
-}
+  /* padding: 1.5rem;
+} */ 
 /* .title-gaiyou {
   top: 0.3rem;
   left: 0.3rem;
@@ -397,6 +398,9 @@ ul li a.current .nav4 {
 .gaiyou-box {
   width: 85%;
   height: auto;
+  margin-left: 7.5%;
+  margin-top: 7.5%;
+  margin-bottom: 10%;
 }
 .gaiyou-box p {
   margin-top: 5%;

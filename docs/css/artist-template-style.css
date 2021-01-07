@@ -141,6 +141,7 @@
   color: rgb(84, 89, 90);
   margin-top: 1rem;
   margin-bottom: 10rem;
+  word-wrap:break-word;
 }
 .artist-caption-past {
   position: relative;
@@ -150,6 +151,7 @@
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
   color: rgb(84, 89, 90);
+  word-wrap:break-word;
 }
 .artist-caption p,
 .artist-caption-past p {
