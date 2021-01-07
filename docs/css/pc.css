@@ -99,8 +99,6 @@ ul li a.current .nav4 {
   background-color: #393939;
 }
 
-
-
 .title00 {
   color: #000000;
   font-family: "HiraginoKG", sans-serif;
@@ -226,7 +224,7 @@ ul li a.current .nav4 {
   box-shadow: 6px 6px #000000;
 }
 .middle-box-container {
-  width: 96%;
+  width: 100%;
   height: auto;
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
@@ -255,16 +253,16 @@ ul li a.current .nav4 {
   letter-spacing: 0.65px;
   line-height: 25px;
 }
-.details00 div{
+.details00 div {
   display: inline-block;
   vertical-align: top;
   /* margin-bottom: 1% */
 }
-.details00-left{
+.details00-left {
   width: 10%;
   min-width: 6rem;
 }
-.details00-right{
+.details00-right {
   width: 80%;
 }
 .notes {
@@ -274,12 +272,11 @@ ul li a.current .nav4 {
   letter-spacing: 0.85px;
   line-height: 1.8rem;
   font-size: 1.5rem;
-  white-space:normal;
+  white-space: normal;
   color: rgb(84, 89, 90);
   font-family: "HiraginoKG", sans-serif;
   margin-top: 0.4rem;
 }
-
 
 #details00-detail {
   position: relative;
@@ -305,20 +302,20 @@ ul li a.current .nav4 {
   width: 95%;
   height: 200;
 }
-.caution-notes p{
+.caution-notes p {
   z-index: 100;
   font-family: "HiraginoKG", sans-serif;
   font-weight: 200;
   letter-spacing: 0.85px;
   line-height: 2.25rem;
   font-size: 1.5rem;
-  white-space:normal;
+  white-space: normal;
   color: #f65353;
   font-family: "HiraginoKG", sans-serif;
   margin-top: 0.4rem;
   margin-right: 3rem;
 }
-.caution-notes span{
+.caution-notes span {
   color: #f65353;
   font-family: "HiraginoKG", sans-serif;
   font-weight: 400;
@@ -326,14 +323,14 @@ ul li a.current .nav4 {
   letter-spacing: 0.65px;
   line-height: 25px;
 }
-.booking-button-wrapper{
+.booking-button-wrapper {
   width: 20rem;
 }
-.booking-button{
+.booking-button {
   padding: 3rem 5rem;
   border-radius: 1rem;
   background-color: rgb(82, 138, 199);
-  border: solid .5rem #f65353;
+  border: solid 0.5rem #f65353;
   transition: 0.3s;
   font-family: "HiraginoKG";
   font-weight: 500;
@@ -342,10 +339,9 @@ ul li a.current .nav4 {
   height: 100%;
   color: white;
 }
-.booking-button:hover{
+.booking-button:hover {
   background-color: rgb(152, 192, 235);
 }
-
 
 .margin-empty {
   margin-top: 35%;
@@ -364,7 +360,7 @@ ul li a.current .nav4 {
   margin-top: 10%;
   margin-bottom: 5%;
   line-height: 1.75rem;
-  text-align-last: justify;       /* Chrome, Firefox */
+  text-align-last: justify; /* Chrome, Firefox */
   text-justify: inter-ideograph;
   word-wrap: break-word;
 }
@@ -388,8 +384,6 @@ ul li a.current .nav4 {
   bottom: -2px;
   right: -2px;
 }
-
-
 
 .gaiyou-container {
   position: relative;

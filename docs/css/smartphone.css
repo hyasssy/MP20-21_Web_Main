@@ -38,9 +38,9 @@
     font-size: 3vw;
     display: inline-block;
   }
-  .notes{
+  .notes {
     font-size: 3.25vw;
-    line-height: 4.5vw
+    line-height: 4.5vw;
   }
   .margin-empty {
     margin-top: 40vw;
@@ -74,23 +74,23 @@
     margin-right: 0.1rem;
   }
 
-.caution-notes p {
-  font-size: 4vw;
-  line-height: 5vw;
-  margin-top: 5vw;
-  margin-bottom: 10vw;
-}
-.caution-notes span {
-  font-size: 5.5vw;
-  line-height: 6vw;
-}
-.booking-button-wrapper{
-  width: 50%;
-  /* height: 30rem; */
-}
-.booking-button {
-  font-size: 5vw;
-}
+  .caution-notes p {
+    font-size: 3.25vw;
+    line-height: 4.5vw;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+  }
+  .caution-notes span {
+    font-size: 3.75vw;
+    line-height: 4.5vw;
+  }
+  .booking-button-wrapper {
+    width: 50%;
+    /* height: 30rem; */
+  }
+  .booking-button {
+    font-size: 5vw;
+  }
 
   .artists-header-namelist {
     font-size: 4.3vw;
@@ -116,14 +116,11 @@
     font-size: 3vw;
   }
 
-
-
-  .modal-content{
+  .modal-content {
     background: #fff;
     left: 1rem;
     width: calc(100vw - 2rem);
     top: 1rem;
-
   }
   .modal-content .closebutton img {
     right: 1.6rem;
@@ -136,7 +133,7 @@
   .middle-artists {
     width: 100%;
   }
-  .artists{
+  .artists {
     width: 99%;
     margin-left: 0.6rem;
     margin-right: 0.6rem;

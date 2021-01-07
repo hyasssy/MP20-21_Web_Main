@@ -4,7 +4,7 @@
 .artist-top {
   width: 100%;
 }
-.artist-textcontainer{
+.artist-textcontainer {
   margin-left: 0.6rem;
   width: calc(100% - 1.2rem);
 }
@@ -30,7 +30,7 @@
   /* margin: 2rem; */
 }
 .artist-portrait-container img {
-border-radius: 95%/100%;
+  border-radius: 95%/100%;
 }
 
 .artist-info-container {
@@ -40,18 +40,19 @@ border-radius: 95%/100%;
   padding: 2rem;
 }
 
-#artist-name{
+#artist-name {
   font-size: 1.5rem;
   font-family: "HiraginoKG";
   font-weight: 600;
   font-size: 3rem;
   color: black;
 }
-#artist-name span{
+#artist-name span {
   display: inline-block;
   white-space: nowrap;
 }
-#artist-info p{/*研究室、卒業*/
+#artist-info p {
+  /*研究室、卒業*/
   margin: 0;
   padding-top: 0.2rem;
   color: rgb(84, 89, 90);
@@ -62,7 +63,7 @@ border-radius: 95%/100%;
   line-height: 1.8rem;
   text-align: justify;
 }
-#artist-info a{
+#artist-info a {
   font-family: futura-pt, "HiraginoKG";
   font-weight: 100;
   letter-spacing: 0px;
@@ -70,21 +71,28 @@ border-radius: 95%/100%;
   line-height: 1.8rem;
 }
 
-.artist-text{
+.artist-text {
   padding: 2rem 5rem;
 }
-.artist-text p{
-  font-size: 1.5rem;
-  font-family: futura-pt, "a-otf-gothic-bbb-pr6n"; /*Futuraもう一つ細くした*/
+#artist-subtitle-theme {
+  /*制作テーマ*/
+  font-family: "a-otf-gothic-bbb-pr6n"; /*Futuraもう一つ細くした*/
+  font-size: 2.5rem;
+  color: black;
+}
+#artist-subtitle-cv {
+  /*CV*/
+  font-family: futura-pt; /*Futuraもう一つ細くした*/
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: black;
 }
 
-#artist-theme, #artist-cv{
+#artist-theme,
+#artist-cv {
   margin-bottom: 10rem;
 }
-#artist-theme{
+#artist-theme {
   color: rgb(84, 89, 90);
   font-family: "GillSans", "a-otf-gothic-bbb-pr6n";
   font-weight: 400;
@@ -94,17 +102,19 @@ border-radius: 95%/100%;
   text-align: justify;
   max-width: 50rem;
 }
-.cv-wrapper{
+.cv-wrapper {
   display: flex;
 }
 .cv-year {
   width: 10%;
   margin-right: 2.5rem;
 }
-.cv-text{
+.cv-text {
   width: 90%;
 }
-.cv-year, .cv-text, .cv-subtitle{
+.cv-year,
+.cv-text,
+.cv-subtitle {
   color: rgb(84, 89, 90);
   font-family: futura-pt, "HiraginoKG";
   font-weight: 100;
@@ -113,16 +123,15 @@ border-radius: 95%/100%;
   line-height: 1.8rem;
   text-align: justify;
 }
-.cv-subtitle{
+.cv-subtitle {
   margin-top: 3rem;
 }
 
-.artist-works{
+.artist-works {
 }
 .artist-works img {
   width: 100%;
 }
-
 
 .artist-caption {
   position: relative;
@@ -142,7 +151,8 @@ border-radius: 95%/100%;
   letter-spacing: 0.5px;
   color: rgb(84, 89, 90);
 }
-.artist-caption p, .artist-caption-past p{
+.artist-caption p,
+.artist-caption-past p {
   margin: 0;
 }
 .artist-caption-title {
@@ -151,18 +161,16 @@ border-radius: 95%/100%;
   font-weight: 500;
   padding-bottom: 1.5rem;
 }
-.artist-caption-info{/*year / media / 出展*/
+.artist-caption-info {
+  /*year / media / 出展*/
   font-size: 1.6rem;
   line-height: 1.8rem;
   font-family: "futura-pt", "HiraginoKG";
   font-weight: 100;
 }
 
-
-
 /* スマホ */
-@media screen and (max-width: 480px){
-
+@media screen and (max-width: 480px) {
   .artist-introduction {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -184,14 +192,15 @@ border-radius: 95%/100%;
     font-size: 5.5vw;
   }
   #artist-theme {
-    font-size: 5.5vw;
+    font-size: 3.6vw;
+    line-height: 6vw;
   }
-  .artist-textcontainer{
+  .artist-textcontainer {
     margin-left: 2rem;
     width: calc(100% - 4rem);
   }
-  .artist-text{
-    padding: 0;
+  .artist-text {
+    padding: 2rem 2rem;
   }
   .artist-caption {
     max-width: 60%;
@@ -201,7 +210,7 @@ border-radius: 95%/100%;
     margin-bottom: 40px;
   }
 
-/*
+  /*
 .artist-portrait-container {
   width: 50%;
   float: left;
@@ -248,5 +257,4 @@ border-radius: 95%/100%;
   font-size: 5vw;
 
 }*/
-
 }
