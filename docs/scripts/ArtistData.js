@@ -159,7 +159,7 @@ const _data = {
         top_image: "./images/works/5_kobayashi/1_1.jpg",
         top_caption_title: "朝を待つ",
         top_caption_year: "2021",
-        top_caption_media: "Video, Mixed Media",
+        top_caption_media: "Single-channel Video",
         top_caption_any: null,//nullは書かなくてもいいですが、書いたほうがわかりやすい追加項目はとりあえず一作品につき1個までとします。もし何かケースがあった場合考えます。
         portrait: "./images/faces/M2/kobayashi_f.jpg",
         name_ja: "小林舞衣",
