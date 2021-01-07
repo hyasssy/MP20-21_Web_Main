@@ -594,7 +594,7 @@ const _data = {
 
     sun: {
         id: "_sun",//htmlの入れ込む先のid
-        top_image: "./images/works/M1_4_sun/1_1.jpg",
+        top_image: "./images/works/M1_4_sun/1_1.png",
         top_caption_title: "盆栽",
         top_caption_year: "2021",
         top_caption_media: "Video",
@@ -627,10 +627,10 @@ const _data = {
         cv_katsudo_text: [],
         cv_jusyo_year: ["2020"],
         cv_jusyo_text: ["2019年度蔡錦奨受賞"],
-        works_onshow_image: [],//トップ以外の展示作品写真
-        works_onshow_title: [],
-        works_onshow_year: [],
-        works_onshow_media: [],
+        works_onshow_image: ["./images/works/M1_4_sun/1_2.png", "./images/works/M1_4_sun/1_3.png"],//トップ以外の展示作品写真
+        works_onshow_title: ["盆栽", "盆栽"],
+        works_onshow_year: ["2021", "2021"],
+        works_onshow_media: ["Video", "Video"],
         works_onshow_any: [null],
         pastworks_image: ["./images/works/M1_4_sun/past_01_「2347年釘付けにされた告解場」_2020 - KUIXING SUN.jpg",
             "./images/works/M1_4_sun/past_02_「吊 · 眼」_2019 - KUIXING SUN.jpg",
@@ -715,7 +715,7 @@ const _data = {
         theme: "身体感覚を探ることに興味がある。3DCGを媒介させながら、身体について考えたい。",
         cv_tenji_year: [],
         cv_tenji_text: [],
-        cv_katsudo_year: ["2016~2020", "2019", "2020"],
+        cv_katsudo_year: ["2016~\n~2020", "2019", "2020"],
         cv_katsudo_text: ["横浜国立大学モダンダンス部自主公演",
         "OrganWorks presents コンテンポラリーダンス振付家育成講座 Terra Co. 成果公演『Period #1』-（セッションハウス／東京）",
         "DANCE×Scrum!!! 2020 - 中村蓉 振り付け作品出演（あうるすぽっと／東京）"],
