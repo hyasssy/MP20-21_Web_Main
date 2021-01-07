@@ -310,7 +310,7 @@ ul li a.current .nav4 {
   font-family: "HiraginoKG", sans-serif;
   font-weight: 200;
   letter-spacing: 0.85px;
-  line-height: 1.8rem;
+  line-height: 2.25rem;
   font-size: 1.5rem;
   white-space:normal;
   color: #f65353;
@@ -321,7 +321,7 @@ ul li a.current .nav4 {
 .caution-notes span{
   color: #f65353;
   font-family: "HiraginoKG", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2rem;
   letter-spacing: 0.65px;
   line-height: 25px;

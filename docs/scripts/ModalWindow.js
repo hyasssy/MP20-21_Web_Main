@@ -25,7 +25,26 @@ $(function () {
 let flags = {
     _osato: false,
     _otaki: false,
-    _oka: false
+    _oka: false,
+    _koga: false,
+    _kobayashi: false,
+    _shiina: false,
+    _shishikura: false,
+    _shimura: false,
+    _seko: false,
+    _hirai: false,
+    _fukuhara: false,
+    _yoshida: false,
+    _uchiumi: false,
+    _kasajima: false,
+    _joyce: false,
+    _sun: false,
+    _tastumura: false,
+    _tanaka: false,
+    _nishimura: false,
+    _hayashi: false,
+    _matsui: false,
+    _yamagishi: false
 }
 function ArtistPage(artistData) {
     //フラグ管理
