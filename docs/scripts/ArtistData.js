@@ -627,16 +627,16 @@ const _data = {
         cv_katsudo_text: [],
         cv_jusyo_year: ["2020"],
         cv_jusyo_text: ["2019年度蔡錦奨受賞"],
-        works_onshow_image: ["./images/works/M1_4_sun/1_2.png", "./images/works/M1_4_sun/1_3.png"],//トップ以外の展示作品写真
-        works_onshow_title: ["盆栽", "盆栽"],
-        works_onshow_year: ["2021", "2021"],
-        works_onshow_media: ["Video", "Video"],
+        works_onshow_image: ["./images/works/M1_4_sun/1_2.png"],//トップ以外の展示作品写真
+        works_onshow_title: ["盆栽"],
+        works_onshow_year: ["2021"],
+        works_onshow_media: ["Video"],
         works_onshow_any: [null],
-        pastworks_image: ["./images/works/M1_4_sun/past_01_「2347年釘付けにされた告解場」_2020 - KUIXING SUN.jpg",
+        pastworks_image: ["./images/works/M1_4_sun/past_04.jpg", "./images/works/M1_4_sun/past_01_「2347年釘付けにされた告解場」_2020 - KUIXING SUN.jpg",
             "./images/works/M1_4_sun/past_02_「吊 · 眼」_2019 - KUIXING SUN.jpg",
             "./images/works/M1_4_sun/past_03_「Should be puzzled」_2018 - KUIXING SUN.jpg"],
-        pastworks_title: ["2347年釘付けにされた告解場", "吊 · 眼", "Should be puzzled"],
-        pastworks_year: ["2020", "2019", "2018"],
+        pastworks_title: ["Prophecy #1", "2347年釘付けにされた告解場", "吊 · 眼", "Should be puzzled"],
+        pastworks_year: ["2020", "2020", "2019", "2018"],
         pastworks_media: [],
         pastworks_any: [null]
     },
