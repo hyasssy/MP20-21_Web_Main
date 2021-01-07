@@ -87,7 +87,7 @@ nav {
 }
 
 ul li a.current .nav1 {
-  background-color: #f65353;
+  background-color: #FF475A;
 }
 ul li a.current .nav2 {
   background-color: rgb(150, 108, 198);
@@ -102,8 +102,8 @@ ul li a.current .nav4 {
 .title00 {
   color: #000000;
   font-family: "HiraginoKG", sans-serif;
-  font-weight: 300;
-  font-size: 3.5rem;
+  font-weight: 500;
+  font-size: 4rem;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
   text-align: left;
@@ -113,8 +113,8 @@ ul li a.current .nav4 {
 }
 .title01 {
   font-family: "HiraginoKG", sans-serif;
-  font-weight: 200;
-  font-size: 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
   letter-spacing: 0.8px;
   margin-bottom: 3rem;
 }
@@ -128,7 +128,9 @@ ul li a.current .nav4 {
   font-weight: 500;
   font-size: 3.5rem;
   letter-spacing: 0.5px;
-  margin-bottom: 1rem;
+  margin-bottom: 7.5%;
+
+  /* margin-bottom: 1rem; */
   text-align: left;
 }
 
@@ -289,13 +291,13 @@ ul li a.current .nav4 {
   line-height: 2.25rem;
   font-size: 1.5rem;
   white-space: normal;
-  color: #f65353;
+  /* color: #FF475A; */
   font-family: "HiraginoKG", sans-serif;
   margin-top: 0.4rem;
   margin-right: 3rem;
 }
 .caution-notes span {
-  color: #f65353;
+  color: #FF475A;
   font-family: "HiraginoKG", sans-serif;
   font-weight: 400;
   font-size: 2rem;
@@ -304,12 +306,17 @@ ul li a.current .nav4 {
 }
 .booking-button-wrapper {
   width: 20rem;
+  margin-left: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .booking-button {
   padding: 3rem 5rem;
   border-radius: 1rem;
-  background-color: rgb(82, 138, 199);
-  border: solid 0.5rem #f65353;
+  /* background-color: rgb(82, 138, 199); */
+  background-color: #FF475A;
+  /* border: solid 0.5rem #FF475A; */
   transition: 0.3s;
   font-family: "HiraginoKG";
   font-weight: 500;
@@ -319,7 +326,8 @@ ul li a.current .nav4 {
   color: white;
 }
 .booking-button:hover {
-  background-color: rgb(152, 192, 235);
+  /* background-color: rgb(152, 192, 235); */
+  opacity: .8;
 }
 
 .margin-empty {
@@ -375,7 +383,6 @@ ul li a.current .nav4 {
   width: 85%;
   height: auto;
   margin-left: 7.5%;
-  margin-top: 7.5%;
   margin-bottom: 10%;
 }
 .gaiyou-box p {
@@ -527,4 +534,129 @@ ul li a.current .nav4 {
   width: 30px;
   height: auto;
   padding: 1.6rem;
+}
+
+/* アコーディオンのスタイルここから */
+.accordion {
+  max-width: 100%;
+  /* padding: 2rem; */
+  margin-top: 5rem;
+  /* margin-bottom: 5rem; */
+}
+.accordion .accordion-header {
+  background-color: #FF475A;
+  color: #fff;
+  font-family: "HiraginoKG";
+  font-weight: 500;
+  font-size: 3rem;
+  /* padding: 20px 11%; */
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  position: relative;
+  z-index: +1;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border-radius: 1rem;
+}
+.accordion .accordion-header p {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.accordion .accordion-header:hover {
+  opacity: .8;
+}
+.accordion .accordion-header .i-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  margin-top: -20px;
+  box-sizing: border-box;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition-duration: 0.2s;
+}
+ .accordion .accordion-header .i-box .caution-i {
+  display: block;
+  width: 18px;
+  height: 18px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition-duration: 0.2s;
+  position: relative;
+}
+ .accordion .accordion-header.open .i-box {
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+ .accordion .accordion-header .i-box .caution-i:before,  .accordion .accordion-header .i-box .caution-i:after {
+  display: flex;
+  content: '';
+  background-color: #fff;
+  border-radius: 10px;
+  width: 18px;
+  height: 4px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transform-origin: center center;
+}
+ .accordion .accordion-header .i-box .caution-i:before {
+  width: 4px;
+  height: 18px;
+  top: 0;
+  left: 7px;
+}
+ .accordion .accordion-header.open .i-box .caution-i:before {
+  content: none;
+}
+ .accordion .accordion-header.open .i-box .caution-i:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+ .accordion .accordion-inner {
+  display: none;
+  padding: 30px 30px;
+  border-left: 2px solid #FF475A;
+  border-right: 2px solid #FF475A;
+  border-bottom: 2px solid #FF475A;
+  box-sizing: border-box;
+}
+ .accordion .accordion-inner .box-caution {
+  height: auto;
+}
+ /* .accordion .accordion-inner p.txt_a_ac {
+  margin: 0;
+} */
+@media screen and (max-width: 1024px) {
+   .accordion .accordion-header {
+    font-size: 18px;
+  }
+   .accordion .accordion-header .i-box {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+   .accordion .accordion-header {
+    font-size: 16px;
+    text-align: left;
+    padding: 15px 60px 15px 15px;
+  }
 }
