@@ -338,7 +338,7 @@ const _data = {
         cv_katsudo_text: [""],
         cv_jusyo_year: [""],
         cv_jusyo_text: [""],
-        works_onshow_image: ["./images/works/9_seko/1_2.jpg", "./images/works/9_seko/1_3.jpg"],//トップ以外の展示作品写真
+        works_onshow_image: ["./images/works/9_seko/1_2.jpg", "./images/works/9_seko/1_5.png"],//トップ以外の展示作品写真
         works_onshow_title: ["Subtraction", "Subtraction"],
         works_onshow_year: ["2020", "2020"],
         works_onshow_media: ["Video Installation", "Video Installation"],
@@ -515,7 +515,7 @@ const _data = {
 
     kasajima: {
         id: "_kasajima",//htmlの入れ込む先のid
-        top_image: "./images/works/M1_2_kasajima/1_1.jpg",
+        top_image: "./images/works/M1_2_kasajima/1_1.png",
         top_caption_title: "バーチャルおじいちゃん・史明",
         top_caption_year: "2021",
         top_caption_media: "Video",
