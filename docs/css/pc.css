@@ -213,7 +213,7 @@ ul li a.current .nav4 {
   position: relative;
   overflow: hidden;
   z-index: 50;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   width: 99%;
   max-width: 900px;
   min-width: 300px;
@@ -326,22 +326,20 @@ ul li a.current .nav4 {
   margin-top: 35%;
 }
 .contact-container {
-  width: 20%;
-  min-width: 27rem;
-  height: auto;
+  width: 100%;
+  text-align: center;
 }
 .contact {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  min-width: 27rem;
   color: #000000;
   font-family: "HiraginoKG", sans-serif;
   font-weight: 200;
   font-size: 1.25rem;
   letter-spacing: 0.95px;
-  margin-top: 10%;
-  margin-bottom: 5%;
   line-height: 1.75rem;
-  text-align-last: justify; /* Chrome, Firefox */
-  text-justify: inter-ideograph;
-  word-wrap: break-word;
 }
 .copyright {
   font-family: a-otf-gothic-bbb-pr6n, sans-serif;
@@ -500,7 +498,7 @@ ul li a.current .nav4 {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   height: 100vh;
   width: 100%;
 }
