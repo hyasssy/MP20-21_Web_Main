@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/pc.css">
     <link rel="stylesheet" href="css/smartphone.css">
     <link rel="stylesheet" href="css/artist-template-style.css">
+    <script type="text/javascript" src="./scripts/ArtistData.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="scripts/navigation.js"></script>
     <script type="text/javascript">//スクロールに応じて背景文字を薄くする。
@@ -572,9 +573,9 @@
                         協力：ソフトバンク株式会社 CSR本部<br>
                     </div>
 
-                    <div style="margin: 10rem 0;" class="caution-notes">
-                      <!-- ページ内リンクフラグ -->
-                      <div id="caution" style="margin-top: -3rem; float:left"></div>
+                    <!-- ページ内リンクフラグ -->
+                    <div id="caution" style="margin-top: -12rem; float:left"></div>
+                    <div style="margin: 13rem 0;" class="caution-notes">
                         <span>［WebやPeatixでの記載情報①：来場方法のご案内］<br></span>
                         <p>新型コロナウイルス感染症拡大への対策を徹底するために、ご来場のお客様にはご不便をおかけしますが、ご理解とご協力をお願いいたします。<br>
                         </p>
@@ -895,7 +896,7 @@
             </a>
 
             <a class="js-modal-open" href="" data-target="otaki">
-                <div class="artist-box" href="">
+                <div class="artist-box">
                     <div class="artist-name" style="color: #ffffff;">大滝彩加 / Ayaka Otaki</div>
                     <div class="artist-picture"><img src="images/artist_thumbnails/otaki.jpg" style="margin-top: -17%;">
                     </div>
@@ -1130,21 +1131,22 @@
     <div class="artist-top">
         <artist-top></artist-top>
     </div>
-
-    <div class="artist-introduction">
-        <div class="artist-portrait-container">
-            <img src="" alt="" id="artist-portrait">
+    <div class="artist-textcontainer">
+        <div class="artist-introduction">
+            <div class="artist-portrait-container">
+                <img src="" alt="" id="artist-portrait">
+            </div>
+            <div class="artist-info-container">
+                <div id="artist-name"></div>
+                <div id="artist-info"></div>
+            </div>
         </div>
-        <div class="artist-info-container">
-            <div id="artist-name"></div>
-            <div id="artist-info"></div>
+        <div class="artist-text">
+            <p style="font-size: 3rem;">制作テーマ</p>
+            <div id="artist-theme"></div>
+            <p>CV</p>
+            <div id="artist-cv"></div>
         </div>
-    </div>
-    <div class="artist-text">
-        <p>制作テーマ</p>
-        <div id="artist-theme"></div>
-        <p>CV</p>
-        <div id="artist-cv"></div>
     </div>
 
     <div class="artist-works">

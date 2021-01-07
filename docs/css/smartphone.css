@@ -20,7 +20,6 @@
   }
   .title01 {
     font-size: 4.3vw;
-    /* margin-bottom: 5vw; */
   }
   .theme-title {
     font-size: 6.5vw;
@@ -100,12 +99,8 @@
     left: 1rem;
     width: calc(100vw - 2rem);
     top: 1rem;
-    /* height: calc(100vh - 10rem); */
+
   }
-  /* .closebutton {
-    text-align: right;
-    padding: 5px;
-  } */
   .modal-content .closebutton img {
     right: 1.6rem;
     bottom: calc(20vh - 0.4rem);
