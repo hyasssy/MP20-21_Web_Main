@@ -224,27 +224,6 @@ ul li a.current .nav4 {
   box-shadow: 6px 6px #000000;
   padding: 1.5rem;
 }
-/* .middle-box-container {
-  width: 100%;
-  height: auto;
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
-  z-index: 50;
-  /* background-color:tomato; */
-  /* padding: 1.5rem;
-} */ 
-/* .title-gaiyou {
-  top: 0.3rem;
-  left: 0.3rem;
-  position: relative;
-  z-index: 100;
-  color: #000000;
-  font-family: "HiraginoKG", sans-serif;
-  font-weight: 200;
-  font-size: 3.5rem;
-  letter-spacing: 0.65px;
-  text-align: left;
-} */
 .details00 {
   z-index: 100;
   color: #000000;
@@ -257,7 +236,6 @@ ul li a.current .nav4 {
 .details00 div {
   display: inline-block;
   vertical-align: top;
-  /* margin-bottom: 1% */
 }
 .details00-left {
   width: 10%;
