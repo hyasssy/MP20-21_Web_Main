@@ -76,13 +76,13 @@
 }
 #artist-subtitle-theme {
   /*制作テーマ*/
-  font-family: "a-otf-gothic-bbb-pr6n"; /*Futuraもう一つ細くした*/
+  font-family: "a-otf-gothic-bbb-pr6n";
   font-size: 2.5rem;
   color: black;
 }
 #artist-subtitle-cv {
   /*CV*/
-  font-family: futura-pt; /*Futuraもう一つ細くした*/
+  font-family: futura-pt;
   font-weight: 400;
   font-size: 3rem;
   color: black;
@@ -127,10 +127,18 @@
   margin-top: 3rem;
 }
 
-.artist-works {
-}
+
 .artist-works img {
   width: 100%;
+}
+/*Past Works*/
+.artist-subtitle-pastworks{
+  font-family: futura-pt;
+  font-weight: 400;
+  font-size: 3rem;
+  color: black;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
 }
 
 .artist-caption {

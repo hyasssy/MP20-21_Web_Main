@@ -81,25 +81,28 @@ function ArtistPage(artistData) {
     artistname.appendChild(span);
     var artistinfo = clone.querySelector("#artist-info");
     var p = document.createElement("p");
-    p.textContent = artistData.class + " / " + artistData.bachelor;
+    p.textContent = artistData.class;
     artistinfo.appendChild(p);
-    if(artistData.website != null && artistData != ""){
+    var p = document.createElement("p");
+    p.textContent = artistData.bachelor;
+    artistinfo.appendChild(p);
+    if (artistData.website != null && artistData != "") {
         var a = document.createElement("a");
         a.href = artistData.website;
         a.target = "_blank";
         a.style = "text-decoration: none;";
-        a.textContent = "作家のWEBサイトをのぞく";
+        a.textContent = artistData.website;
         artistinfo.appendChild(a);
     }
-    
+
     var artisttheme = clone.querySelector("#artist-theme");
     artisttheme.textContent = artistData.theme;
     var artistcv = clone.querySelector("#artist-cv");
 
-    if(artistData.cv_tenji_year.length > 0 && artistData.cv_tenji_year[0] != "" && artistData.cv_tenji_year[0] != null){
+    if (artistData.cv_tenji_year.length > 0 && artistData.cv_tenji_year[0] != "" && artistData.cv_tenji_year[0] != null) {
         var div = document.createElement("div");
         div.className = "cv-subtitle";
-        div.textContent = "展示歴";
+        div.textContent = "展覧会歴";
         artistcv.appendChild(div);
         for (let i = 0; i < artistData.cv_tenji_year.length; i++) {
             var parent = document.createElement("div");
@@ -115,27 +118,28 @@ function ArtistPage(artistData) {
             artistcv.appendChild(parent);
         }
     }
-    
-    if(artistData.cv_katsudo_year.length > 0 && artistData.cv_katsudo_year[0] != "" && artistData.cv_katsudo_year[0] != null){
-    var div = document.createElement("div");
-    div.className = "cv-subtitle";
-    div.textContent = "活動歴";
-    artistcv.appendChild(div);
-    for (let i = 0; i < artistData.cv_katsudo_year.length; i++) {
-        var parent = document.createElement("div");
-        parent.className = "cv-wrapper";
-        var div = document.createElement("div");
-        div.className = "cv-year";
-        div.textContent = artistData.cv_katsudo_year[i];
-        parent.appendChild(div);
-        var div = document.createElement("div");
-        div.className = "cv-text";
-        div.textContent = artistData.cv_katsudo_text[i];
-        parent.appendChild(div);
-        artistcv.appendChild(parent);
-    }}
 
-    if(artistData.cv_jusyo_year.length > 0 && artistData.cv_jusyo_year[0] != "" && artistData.cv_jusyo_year[0] != null){
+    if (artistData.cv_katsudo_year.length > 0 && artistData.cv_katsudo_year[0] != "" && artistData.cv_katsudo_year[0] != null) {
+        var div = document.createElement("div");
+        div.className = "cv-subtitle";
+        div.textContent = "ほか活動歴";
+        artistcv.appendChild(div);
+        for (let i = 0; i < artistData.cv_katsudo_year.length; i++) {
+            var parent = document.createElement("div");
+            parent.className = "cv-wrapper";
+            var div = document.createElement("div");
+            div.className = "cv-year";
+            div.textContent = artistData.cv_katsudo_year[i];
+            parent.appendChild(div);
+            var div = document.createElement("div");
+            div.className = "cv-text";
+            div.textContent = artistData.cv_katsudo_text[i];
+            parent.appendChild(div);
+            artistcv.appendChild(parent);
+        }
+    }
+
+    if (artistData.cv_jusyo_year.length > 0 && artistData.cv_jusyo_year[0] != "" && artistData.cv_jusyo_year[0] != null) {
         var div = document.createElement("div");
         div.className = "cv-subtitle";
         div.textContent = "受賞歴";
@@ -164,6 +168,11 @@ function ArtistPage(artistData) {
         div.appendChild(ArtistCaption(artistData.works_onshow_title[i], artistData.works_onshow_year[i], artistData.works_onshow_media[i], artistData.works_onshow_any[i], true));
         artistworks.appendChild(div);
     }
+    var div = document.createElement("div");
+    div.className = "artist-subtitle-pastworks";
+    div.textContent = "Past Works";
+    artistworks.appendChild(div);
+    //過去作品
     for (let i = 0; i < artistData.pastworks_image.length; i++) {
         var div = document.createElement("div");
         var img = document.createElement("img");
@@ -185,10 +194,6 @@ function ArtistCaption(title, year, media, any = null, isOnShow = false) {
     var p = document.createElement("p");
     p.textContent = title;
     p.className = "artist-caption-title";
-    div.appendChild(p);
-    var p = document.createElement("p");
-    p.className = "artist-caption-info";
-    p.textContent = isOnShow ? "On Show" : "Past Work";
     div.appendChild(p);
     var p = document.createElement("p");
     p.className = "artist-caption-info";

@@ -221,7 +221,7 @@ ul li a.current .nav4 {
   margin-right: 0;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
-  box-shadow: 6px 6px #000000;
+  box-shadow: 1rem 1rem #000000;
   padding: 1.5rem;
 }
 .details00 {
