@@ -28,7 +28,9 @@
 #logo {
   color: white;
   position: absolute;
-  width: 100%;
+  width: 90%;
+  padding-left: 5%;
+  padding-top: 5%;
   z-index: 10;
 }
 #main-visual {
