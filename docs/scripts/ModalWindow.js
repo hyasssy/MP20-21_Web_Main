@@ -121,7 +121,11 @@ function ArtistPage(artistData) {
     if (artistData.cv_katsudo_year.length > 0 && artistData.cv_katsudo_year[0] != "" && artistData.cv_katsudo_year[0] != null) {
         var div = document.createElement("div");
         div.className = "cv-subtitle";
-        div.textContent = "ほか活動歴";
+        if (artistData.cv_tenji_year.length > 0 && artistData.cv_tenji_year[0] != "" && artistData.cv_tenji_year[0] != null) {
+            div.textContent = "ほか活動歴";
+        }else{
+            div.textContent = "活動歴";
+        }
         artistcv.appendChild(div);
         for (let i = 0; i < artistData.cv_katsudo_year.length; i++) {
             var parent = document.createElement("div");
