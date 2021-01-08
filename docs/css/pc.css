@@ -31,22 +31,17 @@
   width: 100%;
   z-index: 10;
 }
-.main-visual {
-  margin: auto;
+#main-visual {
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/mainvisual.png);
-  background-size: 100% 100%; /*100%をautoにすると、画像の縦横比固定されるが、マージンの設定する必要あり。*/
-  background-repeat: no-repeat;
-}
-@media screen and (orientation: portrait) {
-  /* 縦向きの場合のスタイル */
-
-  .main-visual {
-    background-image: url(../images/mainvisual_vertical.png);
-    background-size: 100% 100%;
-  }
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*ナビゲーション*/
@@ -260,8 +255,8 @@ nav {
   min-width: 6rem;
 }
 .details00-right {
-  width: 90%;
-  max-width: calc(98% - 6rem);
+  width: 85%;
+  max-width: calc(95% - 6rem);
 }
 .notes {
   z-index: 100;
@@ -321,7 +316,7 @@ nav {
   line-height: 25px;
 }
 .booking-button-wrapper {
-  width: 20rem;
+  width: 22rem;
   margin-top: 2rem;
   text-align: center;
 }

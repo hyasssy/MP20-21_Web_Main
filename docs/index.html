@@ -38,10 +38,18 @@
                     h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
             })(document);
     </script>
-    <script type="text/javascript"> //フェードイン
+    <script type="text/javascript">
+        //フェードイン
         setTimeout(function () {
             $("body").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
         }, 000);
+        //縦横判別して画像差し替え
+        window.onload = function () {
+            if (window.innerHeight > window.innerWidth) {
+                /* 縦画面時の処理 */
+                $('#main-visual').attr('src', './images/mainvisual_vertical.png');
+            }
+        }
     </script>
 
     <script type="text/javascript">
@@ -467,7 +475,9 @@
         	c-0.48,2.36-2.2,6.09-4.69,8.96v-1.79c0.41-0.13,0.7-0.35,0.7-0.54c0-0.32-0.29-0.38-0.77-0.41l-2.65-0.19v18.69h2.71V352.55z" />
         </svg>
 
-        <div class="main-visual"></div>
+
+        <img id="main-visual" src="./images/mainvisual.png" alt="">
+
         <div class="arrow-top">
             <a href="#title">
                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 72">
@@ -550,10 +560,10 @@
                 <div class="details00-left">入場</div>
                 <div class="details00-right">無料（事前予約制）</div>
                 <div class="booking-button-wrapper">
-                    <a href="https://mediapractice2021.peatix.com/" style="text-decoration: none;">
+                    <a href="https://mediapractice2021.peatix.com/" style="text-decoration: none;" target="_blank">
                         <div class="booking-button">
                             <div>予約する→</div>
-                            <div class="booking-button-caption">予約サイトPeatixリンク</div>
+                            <div class="booking-button-caption">（予約サイトPeatixリンク）</div>
                         </div>
                     </a>
                 </div>
@@ -614,9 +624,12 @@
             <div class="details00">
                 <div class="details00-left"></div>
                 <div class="notes" style="text-align: justify;">
-                    <span>※新型コロナウイルス感染症拡大防止のため、ご来場の皆様には、来場にあたり日時指定の事前予約をお願いさせていただきます。感染対策を強化した上での開催のため、あらかじめ</span>
-                    <a href="#caution" style="text-decoration: none;">「来場方法のご案内」</a>
-                    <span>をお読みになりお越しください。</span>
+                    <span>※新型コロナウイルス感染症拡大防止のため、ご来場の皆様には、来場にあたり日時指定の事前予約をお願いさせていただきます。感染対策を強化した上での開催のため、あらかじめ
+                        <!--</span>
+                    <a href="#caution" style="text-decoration: none;">-->「来場方法のご案内」
+                        <!--</a>
+                    <span>-->をお読みになりお越しください。
+                    </span>
                     <br><br><br>
                 </div>
             </div>
