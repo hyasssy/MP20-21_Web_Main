@@ -122,11 +122,11 @@
   .modal-content {
     background: #fff;
     left: 1rem;
-    width: calc(100vw - 2rem);
+    width: calc(100vw - 3rem);
     top: 1rem;
   }
   .modal-content .closebutton img {
-    right: 1.6rem;
+    right: 2.5rem;
     bottom: calc(20vh - 0.4rem);
   }
   .accordion .accordion-header p {

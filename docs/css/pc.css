@@ -117,7 +117,7 @@ nav {
 
 .title00 {
   color: #000000;
-  font-family: "HiraginoKG", sans-serif;
+  font-family: "HelveticaNeue", "HiraginoKG", sans-serif;
   font-weight: 500;
   font-size: 4rem;
   letter-spacing: 0.5px;
@@ -140,8 +140,8 @@ nav {
 
 .theme-title {
   color: #000000;
-  font-family: "GillSans", "HiraginoKG", sans-serif;
-  font-weight: 500;
+  font-family: "HelveticaNeue", "HiraginoKG", sans-serif;
+  font-weight: 400;
   font-size: 2.7rem;
   letter-spacing: 0.65px;
   line-height: 25px;
@@ -411,8 +411,8 @@ nav {
 .gaiyou {
   position: relative;
   color: rgb(84, 89, 90);
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-  font-weight: 300;
+  font-family: "HelveticaNeue", a-otf-gothic-bbb-pr6n, sans-serif;
+  font-weight: 400;
   letter-spacing: 0px;
   font-size: 1.75rem;
   line-height: 3rem;

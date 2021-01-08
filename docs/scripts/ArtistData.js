@@ -705,7 +705,7 @@ const _data = {
         top_caption_title: "流動体",
         top_caption_year: "2021",
         top_caption_media: "Video",
-        top_caption_any: "photo by Tanaka Tetsuo",
+        top_caption_any: null,
         portrait: "./images/faces/M1/tanaka_f.jpg",
         name_ja: "田中彩",
         name_en: "Aya Tanaka",
@@ -725,7 +725,7 @@ const _data = {
         works_onshow_title: ["流動体", "流動体"],
         works_onshow_year: ["2021", "2021"],
         works_onshow_media: ["Video", "Video"],
-        works_onshow_any: ["photo by Tanaka Tetsuo", "photo by Tanaka Tetsuo"],
+        works_onshow_any: [],
         pastworks_image: ["./images/works/M1_6_tanaka/past_01_計画白書_2017_Tanaka Aya.JPG",
             "./images/works/M1_6_tanaka/past_02.jpg"],
         pastworks_title: ["計画白書", "破面"],
@@ -820,7 +820,7 @@ const _data = {
             "./images/works/M1_8_hayashi/past_04.jpg"],
         pastworks_title: ["Is your body yours?", "So, who am I?", "Practice to walk"],
         pastworks_year: ["2020", "2020", "2019"],
-        pastworks_media: [],
+        pastworks_media: ["VR installation","VR installation", "video"],
         pastworks_any: [null]
     },
 

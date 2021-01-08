@@ -73,8 +73,7 @@ function ArtistPage(artistData) {
     artistportrait.src = artistData.portrait;
     var artistname = clone.querySelector("#artist-name");
     var span = document.createElement("span");
-    span.textContent = artistData.name_ja + " /";
-    span.style = "margin-right:1rem;";/* 名前の横の空白 */
+    span.textContent = artistData.name_ja + "｜";
     artistname.appendChild(span);
     var span = document.createElement("span");
     span.textContent = artistData.name_en;
