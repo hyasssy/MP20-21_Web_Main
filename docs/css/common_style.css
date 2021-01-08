@@ -1,7 +1,7 @@
 /*共通CSS*/
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 
-@font-face {
+/* @font-face {
   font-family: "GillSans";
   src: url(../fonts/GillSans-Light-08.ttf);
   font-weight: 300;
@@ -20,7 +20,7 @@
   font-family: "Futura";
   src: url(../fonts/Futura-MediumItalic-02.ttf);
   font-style: italic;
-}
+} */
 @font-face {
   font-family: "HiraginoKGW0";
   src: url(../fonts/HiraginoKG-W0.ttc);
@@ -76,11 +76,11 @@
   src: url(../fonts/HelveticaNeue-Medium-11.ttf);
   font-weight: 500;
 }
-@font-face {
+/* @font-face {
   font-family: "HelveticaNeue";
   src: url(../fonts/HelveticaNeue-Bold.ttf);
   font-weight: 700;
-}
+} */
 
 html {
   background: rgb(178, 178, 178);
