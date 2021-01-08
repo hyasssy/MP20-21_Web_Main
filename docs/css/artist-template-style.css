@@ -57,7 +57,7 @@
   margin: 0;
   padding-top: 0.2rem;
   color: rgb(84, 89, 90);
-  font-family: futura-pt, "HiraginoKG";
+  font-family: "HiraginoKG";
   font-weight: 100;
   letter-spacing: 0px;
   font-size: 1.5rem;
@@ -65,7 +65,7 @@
   text-align: justify;
 }
 #artist-info a {
-  font-family: futura-pt, "HiraginoKG";
+  font-family: "HiraginoKG";
   font-weight: 100;
   letter-spacing: 0px;
   font-size: 1.5rem;
@@ -77,13 +77,13 @@
 }
 #artist-subtitle-theme {
   /*制作テーマ*/
-  font-family: "futura-pt", "HiraginoKG", sans-serif;
+  font-family: "HiraginoKG", sans-serif;
   font-size: 2.5rem;
   color: black;
 }
 #artist-subtitle-cv {
   /*CV*/
-  font-family: "futura-pt", "HiraginoKG", sans-serif;
+  font-family: "HiraginoKG", sans-serif;
   font-weight: 300;
   font-size: 3rem;
   color: black;
@@ -117,7 +117,7 @@
 .cv-text,
 .cv-subtitle {
   color: rgb(84, 89, 90);
-  font-family: futura-pt, "HiraginoKG", sans-serif;
+  font-family: "HiraginoKG", sans-serif;
   font-weight: 100;
   letter-spacing: 0px;
   font-size: 1.5rem;
@@ -133,7 +133,7 @@
 }
 /*Past Works*/
 .artist-subtitle-pastworks {
-  font-family: "futura-pt", "HiraginoKG", sans-serif;
+  font-family: "HiraginoKG", sans-serif;
   font-weight: 400;
   font-size: 3rem;
   color: black;
@@ -168,7 +168,7 @@
 }
 .artist-caption-title {
   font-size: 2rem;
-  font-family: "futura-pt", "HiraginoKG";
+  font-family: "HiraginoKG", sans-serif;
   font-weight: 500;
   padding-bottom: 0.5rem;
 }
@@ -176,7 +176,7 @@
   /*year / media / 出展*/
   font-size: 1.6rem;
   line-height: 1.7rem;
-  font-family: "futura-pt", "HiraginoKG";
+  font-family: "HiraginoKG", sans-serif;
   font-weight: 100;
 }
 .artist-border {
