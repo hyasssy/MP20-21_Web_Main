@@ -15,6 +15,10 @@
     font-size: 2.5vw;
     line-height: 3.25vw;
   }
+  .middle-box {
+    width: calc(100% - 5rem);
+    box-shadow: 0.6rem 0.7rem #000000;
+  }
   .title00 {
     font-size: 6.5vw;
   }
@@ -27,11 +31,6 @@
   .details00 {
     font-size: 3.75vw;
     line-height: 4.5vw;
-  }
-  .details00-left {
-    min-width: 5.5vw;
-  }
-  .details00-right {
   }
   #details00-detail {
     letter-spacing: 0.65px;
@@ -62,9 +61,13 @@
     max-width: 15vw;
     min-width: 10vw;
   }
+  .gaiyou-box {
+    width: 100%;
+    margin-left: 0;
+  }
   .gaiyou {
-    font-size: 3.8vw;
-    line-height: 5vw;
+    font-size: 3.25vw;
+    line-height: 5.2vw;
     margin-top: 8%;
     margin-bottom: 8%;
   }
@@ -125,6 +128,9 @@
   .modal-content .closebutton img {
     right: 1.6rem;
     bottom: calc(20vh - 0.4rem);
+  }
+  .accordion .accordion-header p {
+    width: 100%;
   }
 }
 

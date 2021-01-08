@@ -101,6 +101,7 @@
   line-height: 3rem;
   text-align: justify;
   max-width: 50rem;
+  text-indent: 1.5rem;
 }
 .cv-wrapper {
   display: flex;
@@ -127,12 +128,11 @@
   margin-top: 3rem;
 }
 
-
 .artist-works img {
   width: 100%;
 }
 /*Past Works*/
-.artist-subtitle-pastworks{
+.artist-subtitle-pastworks {
   font-family: futura-pt;
   font-weight: 400;
   font-size: 3rem;
@@ -149,7 +149,7 @@
   color: rgb(84, 89, 90);
   margin-top: 1rem;
   margin-bottom: 10rem;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 .artist-caption-past {
   position: relative;
@@ -159,7 +159,7 @@
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
   color: rgb(84, 89, 90);
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 .artist-caption p,
 .artist-caption-past p {
@@ -202,8 +202,8 @@
     font-size: 5.5vw;
   }
   #artist-theme {
-    font-size: 3.6vw;
-    line-height: 6vw;
+    font-size: 3.25vw;
+    line-height: 5.2vw;
   }
   .artist-textcontainer {
     margin-left: 2rem;
