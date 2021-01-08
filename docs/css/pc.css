@@ -98,19 +98,19 @@ nav {
   color: #272727;
 }
 
-/* ul li a .nav1 .current, */
+.nav1-current,
 .nav1:hover {
   color: #ffa88d;
 }
-/* ul li a.current .nav2, */
+.nav2-current,
 .nav2:hover {
   color: #83b1ff;
 }
-/* ul li a .nav3 .current, */
+.nav3-current,
 .nav3:hover {
   color: #c7cb9d;
 }
-/* ul li a .nav4 .current, */
+.nav4-current,
 .nav4:hover {
   color: #c6c6c6;
 }
@@ -245,7 +245,7 @@ nav {
 .details00 {
   z-index: 100;
   color: #000000;
-  font-family: "HiraginoKG", sans-serif;
+  font-family: "HelveticaNeue", "HiraginoKG", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 0.65px;
@@ -260,8 +260,8 @@ nav {
   min-width: 6rem;
 }
 .details00-right {
-  width: 80%;
-  max-width: calc(95% - 6rem);
+  width: 90%;
+  max-width: calc(98% - 6rem);
 }
 .notes {
   z-index: 100;
@@ -322,9 +322,7 @@ nav {
 }
 .booking-button-wrapper {
   width: 20rem;
-  margin-left: 10%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   text-align: center;
 }
 .booking-button {
@@ -334,13 +332,22 @@ nav {
   background-color: #ff475a;
   /* border: solid 0.5rem #FF475A; */
   transition: 0.3s;
-  font-family: "HiraginoKG";
-  font-weight: 500;
-  font-size: 2rem;
+  font-family: "HelveticaNeue", "HiraginoKG", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 0.65px;
+  line-height: 25px;
   width: 100%;
   height: 100%;
   color: white;
   align-items: center;
+}
+.booking-button-caption {
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  font-family: "HiraginoKG", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.85px;
 }
 .booking-button div {
   display: inline-block;
@@ -411,7 +418,7 @@ nav {
 .gaiyou {
   position: relative;
   color: rgb(84, 89, 90);
-  font-family: "HelveticaNeue", a-otf-gothic-bbb-pr6n, sans-serif;
+  font-family: "HelveticaNeue", "a-otf-gothic-bbb-pr6n", sans-serif;
   font-weight: 400;
   letter-spacing: 0px;
   font-size: 1.75rem;
@@ -557,16 +564,16 @@ nav {
 /* アコーディオンのスタイルここから */
 .accordion {
   max-width: 100%;
-  /* padding: 2rem; */
-  margin-top: 5rem;
-  /* margin-bottom: 5rem; */
+  margin-top: 1rem;
 }
 .accordion .accordion-header {
   background-color: #ff475a;
   color: #fff;
-  font-family: "HiraginoKG";
-  font-weight: 500;
-  font-size: 3rem;
+  font-family: "HelveticaNeue", "HiraginoKG", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 0.65px;
+  line-height: 25px;
   /* padding: 20px 11%; */
   padding-left: 2rem;
   padding-top: 2rem;

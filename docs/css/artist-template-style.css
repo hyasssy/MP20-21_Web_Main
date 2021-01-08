@@ -77,13 +77,13 @@
 }
 #artist-subtitle-theme {
   /*制作テーマ*/
-  font-family: "a-otf-gothic-bbb-pr6n";
+  font-family: "futura-pt", "HiraginoKG", sans-serif;
   font-size: 2.5rem;
   color: black;
 }
 #artist-subtitle-cv {
   /*CV*/
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "futura-pt", "HiraginoKG", sans-serif;
   font-weight: 300;
   font-size: 3rem;
   color: black;
@@ -133,7 +133,7 @@
 }
 /*Past Works*/
 .artist-subtitle-pastworks {
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "futura-pt", "HiraginoKG", sans-serif;
   font-weight: 400;
   font-size: 3rem;
   color: black;
@@ -168,7 +168,7 @@
 }
 .artist-caption-title {
   font-size: 2rem;
-  font-family: "GillSans", a-otf-futo-go-b101-pr6n;
+  font-family: "futura-pt", "HiraginoKG";
   font-weight: 500;
   padding-bottom: 0.5rem;
 }
