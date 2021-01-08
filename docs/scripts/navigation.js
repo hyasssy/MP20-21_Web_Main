@@ -16,7 +16,7 @@ $(function(){
 								$("#nav2").attr("class", "nav2");
 								$("#nav3").attr("class", "nav3");
 								$("#nav4").attr("class", "nav4");
-								console.log('top');
+								// console.log('top');
 								break;
 							case (position > title && details > position):
 							// TITLE
@@ -24,7 +24,7 @@ $(function(){
 								$("#nav2").attr("class", "nav2-current");
 								$("#nav3").attr("class", "nav3");
 								$("#nav4").attr("class", "nav4");
-								console.log('title');
+								// console.log('title');
 								break;
 							case (position > details && artists > position):
 							// DETAILS
@@ -32,7 +32,7 @@ $(function(){
 								$("#nav2").attr("class", "nav2");
 								$("#nav3").attr("class", "nav3-current");
 								$("#nav4").attr("class", "nav4");
-								console.log('details');
+								// console.log('details');
 								break;
 							case (position > artists && end > position):
 							// ARTISTS
@@ -40,9 +40,13 @@ $(function(){
 								$("#nav2").attr("class", "nav2");
 								$("#nav3").attr("class", "nav3");
 								$("#nav4").attr("class", "nav4-current");
-								console.log('artists');
+								// console.log('artists');
 								break;
 
-						 	default: console.log('error...')
+							 default: break;
+							//  console.log('error...');
 
-						 }
+						}
+					});
+
+});
