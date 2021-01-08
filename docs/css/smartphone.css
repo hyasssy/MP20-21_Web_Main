@@ -1,4 +1,9 @@
 @media screen and (max-width: 480px) {
+  #logo {
+    width: calc(100% - 1.2rem);
+    padding: 0;
+    margin: 0.6rem;
+  }
   .top-header {
     position: relative;
     flex: 1;
