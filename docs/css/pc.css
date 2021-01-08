@@ -124,11 +124,12 @@ ul li a.current .nav4 {
 
 .theme-title {
   color: #000000;
-  font-family: "HiraginoKG", sans-serif;
+  font-family: "GillSans", "HiraginoKG", sans-serif;
   font-weight: 500;
-  font-size: 3.5rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 7.5%;
+  font-size: 2.7rem;
+  letter-spacing: 0.65px;
+  line-height: 25px;
+  margin-bottom: 2rem;
 
   /* margin-bottom: 1rem; */
   text-align: left;
@@ -231,7 +232,7 @@ ul li a.current .nav4 {
   color: #000000;
   font-family: "HiraginoKG", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.65px;
   line-height: 25px;
 }
@@ -518,7 +519,7 @@ ul li a.current .nav4 {
   height: 90%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
-  box-shadow: 6px 6px #000000;
+  box-shadow: 1rem 1rem #000000;
   overflow: auto;
 }
 .modal-content .closebutton img {
@@ -645,7 +646,7 @@ ul li a.current .nav4 {
 } */
 @media screen and (max-width: 1024px) {
    .accordion .accordion-header {
-    font-size: 18px;
+    font-size: 2rem;
   }
    .accordion .accordion-header .i-box {
     width: 30px;
@@ -655,7 +656,6 @@ ul li a.current .nav4 {
 }
 @media screen and (max-width: 767px) {
    .accordion .accordion-header {
-    font-size: 16px;
     text-align: left;
     padding: 15px 60px 15px 15px;
   }
