@@ -98,19 +98,19 @@ nav {
   color: #272727;
 }
 
-ul li a.current .nav1,
+/* ul li a .nav1 .current, */
 .nav1:hover {
   color: #ffa88d;
 }
-ul li a.current .nav2,
+/* ul li a.current .nav2, */
 .nav2:hover {
   color: #83b1ff;
 }
-ul li a.current .nav3,
+/* ul li a .nav3 .current, */
 .nav3:hover {
   color: #c7cb9d;
 }
-ul li a.current .nav4,
+/* ul li a .nav4 .current, */
 .nav4:hover {
   color: #c6c6c6;
 }
