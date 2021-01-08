@@ -361,6 +361,7 @@ nav {
 .contact-container {
   width: 100%;
   text-align: center;
+  margin-top: 30rem;
 }
 .contact {
   display: inline-block;
@@ -530,7 +531,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   height: 100vh;
   width: 100%;
 }
