@@ -537,7 +537,7 @@ ul li a.current .nav4,
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   box-shadow: 1rem 1rem #000000;
-  overflow: auto;
+  overflow-y: overlay; /*スクロールバーをオーバーレイする。webkit対応ブラウザのみ*/
 }
 .modal-content .closebutton img {
   position: fixed;
