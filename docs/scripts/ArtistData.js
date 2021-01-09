@@ -385,7 +385,7 @@ const _data = {
         works_onshow_media: ["Video, Mixed Media", "Video, Mixed Media"],
         works_onshow_any: [null],
         pastworks_image: ["./images/works/10_hirai/past_01_島に埋められた本の骨_2019 - 平井亨季.jpg",
-            "./images/works/10_hirai/past_02_公共をなぞる_2019 - 平井亨季.jpg",
+            "./images/works/10_hirai/hiraipast2.jpg",
             "./images/works/10_hirai/past_03_帰化植物の庭_2020 - 平井亨季.jpg"],
         pastworks_title: ["島に埋められた本の骨", "公共をなぞる", "帰化植物の庭"],
         pastworks_year: ["2019", "2019", "2020"],
