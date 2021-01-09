@@ -738,7 +738,7 @@ const _data = {
 
     nishimura: {
         id: "_nishimura",//htmlの入れ込む先のid
-        top_image: "./images/works/M1_7_nishimura/1_1.jpg",
+        top_image: null,
         top_caption_title: "僕に似てかわいい",
         top_caption_year: "2021",
         top_caption_media: "Installation",
