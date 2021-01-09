@@ -113,7 +113,7 @@ const _data = {
         pastworks_title: ["I am publishing all the names exists in the whole world.", "groove 12", "Full Speed 最強元気連合"],
         pastworks_year: ["2019", "2020", "2019"],
         pastworks_media: ["Mixed Media", "Digital Audio/Cassetle", "Project"],
-        pastworks_any: [null]
+        pastworks_any: ["", "Label: outlines, Mastering: heavyweight.pro, Artwork: Iwona Jarosz / Yes in Progress", ""]
     },
 
     koga: {
