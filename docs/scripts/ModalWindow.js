@@ -66,8 +66,10 @@ function ArtistPage(artistData) {
     var img = document.createElement("img");
     img.src = artistData.top_image;
     //テンプレートの要素に内容を反映
+    if (artistData.top_image != null) {
     artisttop.appendChild(img);
     artisttop.appendChild(ArtistCaption(artistData.top_caption_title, artistData.top_caption_year, artistData.top_caption_media, artistData.top_caption_any, true));
+  }
 
     var artistportrait = clone.querySelector("#artist-portrait");
     artistportrait.src = artistData.portrait;
