@@ -560,7 +560,7 @@ const _data = {
 
     joyce: {
         id: "_joyce",//htmlの入れ込む先のid
-        top_image: "./images/works/M1_3_joyce/joyce_yuzuki_1.png",
+        top_image: "./images/works/M1_3_joyce/1_1.jpg",
         top_caption_title: "新異家族",
         top_caption_year: "2021",
         top_caption_media: "Video",
@@ -581,7 +581,7 @@ const _data = {
         cv_katsudo_text: [],
         cv_jusyo_year: [],
         cv_jusyo_text: [],
-        works_onshow_image: ["./images/works/M1_3_joyce/joyce_yuzuki_2.png", "./images/works/M1_3_joyce/joyce_yuzuki_3.png"],//トップ以外の展示作品写真
+        works_onshow_image: ["./images/works/M1_3_joyce/1_2.jpg", "./images/works/M1_3_joyce/1_3.jpg"],//トップ以外の展示作品写真
         works_onshow_title: ["新異家族", "新異家族"],
         works_onshow_year: ["2021", "2021"],
         works_onshow_media: ["Video", "Video"],
