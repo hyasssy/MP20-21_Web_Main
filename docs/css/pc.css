@@ -73,9 +73,13 @@ nav {
 }
 
 .nav1,
+.nav1-current,
 .nav2,
+.nav2-current,
 .nav3,
-.nav4 {
+.nav3-current,
+.nav4,
+.nav4-current {
   position: relative;
   border-radius: 100%;
   width: 40px;
