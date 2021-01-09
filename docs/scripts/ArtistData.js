@@ -533,7 +533,7 @@ const _data = {
         cv_tenji_text: [
             "先端○展 -（東京藝術大学上野キャンパス絵画棟1階 アートスペース／東京）",
             "WIP展 -（東京藝術大学取手キャンパス／茨城）",
-            "『みっける365日』展 -（生活工房3階 生活工房ギャラリー・4階 ワークショップルームA・B／東京）",
+            "みっける365日 展 -（生活工房3階 生活工房ギャラリー・4階 ワークショップルームA・B／東京）",
             "PREVIEW - カタルシスの岸辺に映像提供（EUKARYOTE／東京）",
             "おじいちゃんホストクラブ Paradise -（American BAR&CAFE REN／東京）",
             "モォオオオオオオ（牛）展 -（東京藝術大学上野キャンパス大学会館／東京）",
@@ -549,7 +549,7 @@ const _data = {
         works_onshow_year: [],
         works_onshow_media: [],
         works_onshow_any: [null],
-        pastworks_image: ["./images/works/M1_2_kasajima/past_1_昭和１００年_2018 - 笠島久美子.jpg",
+        pastworks_image: ["./images/works/M1_2_kasajima/past_1.jpg",
             "./images/works/M1_2_kasajima/past_2_Golf Grandpa Game_2020 - 笠島久美子.jpg",
             "./images/works/M1_2_kasajima/past_3_よういちお別れ展-2020 - 笠島久美子.jpg"],
         pastworks_title: ["昭和１００年", "Golf Grandpa Game", "よういちお別れ展"],
