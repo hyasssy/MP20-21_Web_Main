@@ -167,15 +167,15 @@
   margin: 0;
 }
 .artist-caption-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "HiraginoKG", sans-serif;
-  font-weight: 500;
-  padding-bottom: 0.5rem;
+  font-weight: 300;
+  padding-bottom: 0.9rem;
 }
 .artist-caption-info {
   /*year / media / 出展*/
-  font-size: 1.6rem;
-  line-height: 1.7rem;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
   font-family: "HiraginoKG", sans-serif;
   font-weight: 100;
 }
@@ -247,10 +247,10 @@
     margin-bottom: 40px;
   }
   .artist-caption-title {
-    font-size: 1.7rem;
+    font-size: 3.6vw;
   }
   .artist-caption-info {
-    font-size: 3.1vw;
+    font-size: 3vw;
     line-height: 3.7vw;
   }
 
