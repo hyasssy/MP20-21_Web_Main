@@ -529,14 +529,13 @@ const _data = {
         bachelor: "東京藝術大学美術学部先端芸術表現科 卒業",
         website: "https://www.instagram.com/got_grand_father/",
         theme: "おじいちゃん",
-        cv_tenji_year: ["2016", "2018", "2018", "2018", "2018", "2019", "2019", "2020", "2020"],
+        cv_tenji_year: ["2016", "2018", "2018", "2018", "2018", "2019", "2020", "2020"],
         cv_tenji_text: [
             "先端○展 -（東京藝術大学上野キャンパス絵画棟1階 アートスペース／東京）",
             "WIP展 -（東京藝術大学取手キャンパス／茨城）",
             "『みっける365日』展 -（生活工房3階 生活工房ギャラリー・4階 ワークショップルームA・B／東京）",
             "PREVIEW - カタルシスの岸辺に映像提供（EUKARYOTE／東京）",
             "おじいちゃんホストクラブ Paradise -（American BAR&CAFE REN／東京）",
-            "ATLAS展 - 東京藝術大学取手校舎",
             "モォオオオオオオ（牛）展 -（東京藝術大学上野キャンパス大学会館／東京）",
             "第68回東京藝術大学卒業・修了作品展 -（東京藝術大学上野キャンパス／東京）",
             "よういちお別れ展 - Dummy Space・（おじいちゃんのお家／東京）"
@@ -740,9 +739,9 @@ const _data = {
     nishimura: {
         id: "_nishimura",//htmlの入れ込む先のid
         top_image: "./images/works/M1_7_nishimura/1_1.jpg",
-        top_caption_title: "未定",
+        top_caption_title: "僕に似てかわいい",
         top_caption_year: "2021",
-        top_caption_media: "",
+        top_caption_media: "Installation",
         top_caption_any: null,
         portrait: "./images/faces/M1/nishimura_f.jpg",
         name_ja: "西村梨緒葉",
@@ -751,19 +750,20 @@ const _data = {
         bachelor: "多摩美術大学美術学部情報デザイン学科メディア芸術コース 卒業",
         website: "https://rioha-nishimura.com/",
         theme: "鑑賞／上演／再生をキーワードに、物語（のような空間）の鑑賞プロセスについて考えている。また、キャラクター論に関する勉強会を主催し、視覚文化や物語作品に依存しないキャラクターの存在単位を模索している。",
-        cv_tenji_year: ["2017", "2018", "2018", "2019", "2020", "2020"],
+        cv_tenji_year: ["2017", "2018", "2019", "2020", "2020"],
         cv_tenji_text: [
             "個展 期末テストの前に会いたい -（Gallery Kazane／東京）",
             "終終終〜の終 - 出展・展覧会ステートメント執筆（多摩美術大学八王子キャンパス／東京）",
-            "#OC_HACK project - 企画ステートメント執筆（多摩美術大学八王子キャンパス／東京）",
             "ESCAPE 多摩美のメディア芸術祭 vol.2 - 出展・企画代表・ゲストトーク企画キュレーター（gallery LE DECO）",
             "多摩美術大学美術学部情報デザイン学科メディア芸術コース2019年度卒業制作展「Skippp…p」- 出展・企画代表・ゲストトーク企画キュレーター（新型コロナウィルス感染症流行拡大のため中止）",
             "Emergency Call -（電話で聞く展覧会）"
         ],
-        cv_katsudo_year: ["2018", "2018", "2019"],
+        cv_katsudo_year: ["2018","2018", "2018", "2019"],
         cv_katsudo_text: [
           "bombyx mori と第 3 の目のためのスタディ - キュレーターとして参加（多摩美術大学八王子キャンパス／東京）",
-          "Round on Laundry on Land - 企画構成・作家紹介文執筆（多摩美術大学八王子キャンパス／東京）","ボールプール - タイトル提供・作家紹介テキスト執筆（多摩美術大学八王子キャンパス／東京）"
+          "Round on Laundry on Land - 企画構成・作家紹介文執筆（多摩美術大学八王子キャンパス／東京）",
+          "#OC_HACK project - 企画ステートメント執筆（多摩美術大学八王子キャンパス／東京）",
+          "ボールプール - タイトル提供・作家紹介テキスト執筆（多摩美術大学八王子キャンパス／東京）"
         ],
         cv_jusyo_year: [],
         cv_jusyo_text: [],
@@ -870,7 +870,7 @@ const _data = {
     yamagishi: {
         id: "_yamagishi",//htmlの入れ込む先のid
         top_image: "./images/works/M1_10_yamagishi/1_1.jpg",
-        top_caption_title: "未定",
+        top_caption_title: "散策",
         top_caption_year: "2021",
         top_caption_media: "Video",
         top_caption_any: null,
