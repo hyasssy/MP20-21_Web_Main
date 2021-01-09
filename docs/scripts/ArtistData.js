@@ -340,7 +340,7 @@ const _data = {
         cv_katsudo_text: [""],
         cv_jusyo_year: [""],
         cv_jusyo_text: [""],
-        works_onshow_image: ["./images/works/9_seko/1_2.jpg", "./images/works/9_seko/1_5.jpg"],//トップ以外の展示作品写真
+        works_onshow_image: ["./images/works/9_seko/1_2.jpg", "./images/works/9_seko/1_3.jpg"],//トップ以外の展示作品写真
         works_onshow_title: ["Subtraction", "Subtraction"],
         works_onshow_year: ["2020", "2020"],
         works_onshow_media: ["Video Installation", "Video Installation"],
