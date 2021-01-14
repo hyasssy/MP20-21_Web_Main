@@ -270,7 +270,7 @@ nav {
   margin-top: 2rem;
 }
 .details00 img:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .notes {
   z-index: 100;
@@ -387,7 +387,7 @@ nav {
   font-weight: 500;
 }
 .onlinecontents-button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .booking-button-caption {
   line-height: 1.8rem;
