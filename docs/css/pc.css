@@ -352,6 +352,9 @@ nav {
   color: white;
   align-items: center;
 }
+.booking-button div {
+  font-weight: 500;
+}
 .onlinecontents-button-wrapper {
   display: inline-block;
   vertical-align: top;
@@ -379,6 +382,9 @@ nav {
   height: 100%;
   color: white;
   align-items: center;
+}
+.onlinecontents-button div{
+  font-weight: 500;
 }
 .onlinecontents-button:hover {
   opacity: 0.5;
@@ -614,7 +620,7 @@ nav {
   background-color: #ff475a;
   color: #fff;
   font-family: "HelveticaNeue", "HiraginoKG", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.8rem;
   letter-spacing: 0.65px;
   line-height: 25px;

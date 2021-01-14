@@ -37,6 +37,10 @@
     font-size: 3.75vw;
     line-height: 4.5vw;
   }
+  .details00 img {
+    width: 100%;
+    min-width: 100px;
+  }
   #details00-detail {
     letter-spacing: 0.65px;
     font-size: 3vw;
@@ -96,6 +100,9 @@
   }
   .onlinecontents-button-wrapper {
     width: 50%;
+  }
+  .onlinecontents-button div {
+    font-size: 3.75vw;
   }
   .booking-button {
     font-size: 3.75vw;
