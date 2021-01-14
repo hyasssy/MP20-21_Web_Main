@@ -264,6 +264,14 @@ nav {
   width: 85%;
   max-width: calc(95% - 6rem);
 }
+.details00 img {
+  width: 50%;
+  min-width: 350px;
+  margin-top: 2rem;
+}
+.details00 img:hover {
+  opacity: 0.5;
+}
 .notes {
   z-index: 100;
   font-family: "HiraginoKG", sans-serif;
@@ -327,16 +335,6 @@ nav {
   margin-top: 2rem;
   text-align: center;
 }
-.onlinecontents-button-wrapper {
-  display: inline-block;
-  vertical-align: top;
-  width: 22rem;
-  height: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  margin-right:11rem;
-  text-align: center;
-}
 .booking-button {
   padding: 3rem 5rem;
   border-radius: 1rem;
@@ -353,6 +351,16 @@ nav {
   height: 100%;
   color: white;
   align-items: center;
+}
+.onlinecontents-button-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 22rem;
+  height: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-right:11rem;
+  text-align: center;
 }
 .onlinecontents-button {
   padding: 3rem 5rem;
