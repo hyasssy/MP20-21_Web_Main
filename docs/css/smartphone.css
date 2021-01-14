@@ -96,7 +96,9 @@
   }
   .onlinecontents-button-wrapper {
     width: 50%;
-    /* height: 30rem; */
+  }
+  .onlinecontents-button {
+    
   }
   .booking-button {
     font-size: 3.75vw;
