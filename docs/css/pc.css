@@ -327,6 +327,13 @@ nav {
   margin-top: 2rem;
   text-align: center;
 }
+.onlinecontents-button-wrapper {
+  display: inline-block;
+  width: 22rem;
+  margin-top: 2rem;
+  margin-right:10rem;
+  text-align: center;
+}
 .booking-button {
   padding: 3rem 5rem;
   border-radius: 1rem;
