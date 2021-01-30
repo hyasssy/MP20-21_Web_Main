@@ -38,11 +38,11 @@
                     h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
             })(document);
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         //フェードイン
-        // setTimeout(function () {
-        //     $("body").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
-        // }, 000);
+        setTimeout(function () {
+            $("body").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
+        }, 000);
         //縦横判別して画像差し替え
         window.onload = function () {
             if (window.innerHeight > window.innerWidth) {
@@ -50,7 +50,7 @@
                 $('#main-visual').attr('src', './images/mainvisual_vertical.png?date=210109');
             }
         }
-    </script>
+    </script> -->
 
     <script type="text/javascript">
         $(function () {
