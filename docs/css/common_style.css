@@ -1,11 +1,6 @@
 /*共通CSS*/
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 
-/* @font-face {
-  font-family: "HiraginoKGW0";
-  src: url(../fonts/HiraginoKG-W0.woff) format("woff");
-  font-weight: 100;
-} */
 @font-face {
   font-family: "HiraginoKG";
   src: url(../fonts/HiraginoKG-W1.woff) format("woff");
