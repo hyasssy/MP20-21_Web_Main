@@ -27,12 +27,12 @@
             $("body").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
         }, 000);
         // 縦横判別して画像差し替え
-        // window.onload = function () {
-        //     if (window.innerHeight > window.innerWidth) {
-        //         /* 縦画面時の処理 */
-        //         $('#main-visual').attr('src', './images/mainvisual_vertical.png');
-        //     }
-        // }
+        window.onload = function () {
+            if (window.innerHeight > window.innerWidth) {
+                /* 縦画面時の処理 */
+                $('#main-visual').attr('src', './images/mainvisual_vertical.png');
+            }
+        }
     </script>
     <script type="text/javascript">//スクロールに応じて背景文字を薄くする。
         window.onscroll = function () {
