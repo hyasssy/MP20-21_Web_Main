@@ -75,6 +75,8 @@ html {
   letter-spacing: 2px;
   color: rgb(84, 89, 90);
   font-family: "a-otf-futo-go-b101-pr6n";
+  scrollbar-width: thin;/*細さ*/
+  scrollbar-color: #000000 #ffffff;/*つまみの色 軌道の色*/
 }
 
 body {

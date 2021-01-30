@@ -573,6 +573,7 @@ nav {
   width: 100%;
   z-index: 999999;
   overflow: hidden;
+  /* overflow: scroll; */
 }
 .modal-bg {
   display: flex;
@@ -591,11 +592,14 @@ nav {
   position: relative;
   top: 5%;
   width: 80%;
-  height: 90%;
+  height: 90vh;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   box-shadow: 1rem 1rem #000000;
+  overflow: scroll;
   overflow-y: overlay; /*スクロールバーをオーバーレイする。webkit対応ブラウザのみ*/
+  scrollbar-width: thin;/*細さ*/
+  scrollbar-color: #000000 #ffffff;/*つまみの色 軌道の色*/
 }
 .modal-content .closebutton img {
   position: fixed;
