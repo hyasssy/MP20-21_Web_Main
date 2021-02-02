@@ -8,13 +8,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/plugin/normalize.css">
+    <link rel="preload" href="images/mainvisual.png" as="image">
+    <link rel="preload" href="images/mainvisual_vertical.png" as="image">
+    <link rel="preload" href="scripts/yoko.js" as="script">
+    <script type="text/javascript" src="scripts/yoko.js"></script>
     <link rel="stylesheet" href="css/common_style.css?date=210109">
-    <link rel="stylesheet" href="css/pc.css?date=210114">
-    <link rel="stylesheet" href="css/smartphone.css?date=210114">
+    <link rel="stylesheet" href="css/pc.css?date=210131">
+    <link rel="stylesheet" href="css/smartphone.css?date=210131">
     <link rel="stylesheet" href="css/artist-template-style.css?date=210109">
-    <script type="text/javascript" src="./scripts/ArtistData.js?date=210109"></script>
+    <script type="text/javascript" src="scripts/ArtistData.js?date=210109"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="scripts/navigation.js?date=210109"></script>
+    <script type="text/javascript">
+        //フェードイン
+        setTimeout(function () {
+            $("body").hide().delay(1500).fadeIn(1200);
+        }, 000);    
+    </script>
     <script type="text/javascript">//スクロールに応じて背景文字を薄くする。
         window.onscroll = function () {
             var scrollTop = window.pageYOffset;
@@ -38,19 +48,6 @@
                     h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
             })(document);
     </script>
-    <script type="text/javascript">
-        //フェードイン
-        setTimeout(function () {
-            $("body").hide().delay(800).fadeIn(1200);//800ms遅らせたら大体大丈夫そう。
-        }, 000);
-        //縦横判別して画像差し替え
-        window.onload = function () {
-            if (window.innerHeight > window.innerWidth) {
-                /* 縦画面時の処理 */
-                $('#main-visual').attr('src', './images/mainvisual_vertical.png?date=210109');
-            }
-        }
-    </script>
 
     <script type="text/javascript">
         $(function () {
@@ -65,6 +62,9 @@
         });
     </script>
 
+    <!-- 検索避け -->
+    <meta name="robots" content="noindex">
+    
     <!-- OGP -->
     <script src="scripts/ModalWindow.js"></script>
     <meta property="og:title" content="MEDIA PRACTICE 20-21">
@@ -124,6 +124,9 @@
     <!-- ページトップ タイトル -->
 
     <div class="page-top" id="top">
+
+        <img id="main-visual" src="images/mainvisual.png">
+
         <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1705 485.2">
             <path d="M647.4,210.5h-18.8v19.3c0,7.8-3.7,13.8-11,13.8h-26.4v17.5h28.5c3.7,0,6.4-0.7,8.7-2.3v94.7H592v17.9h89.9v-17.9h-34.5
 	L647.4,210.5L647.4,210.5z M464.9,371.4h110.8v-17.7h-84.1l48.3-40.9c19.1-16.3,34.7-31.5,34.7-55.6c0-29-20.2-48-54.9-48
@@ -460,7 +463,6 @@
 
 
 
-        <img id="main-visual" src="./images/mainvisual.png?date=210109" alt="">
 
         <div class="arrow-top">
             <a href="#title">
@@ -481,7 +483,6 @@
             <div class="title01">
                 <span>修士課程修了制作展／修士一年次成果発表会</span>
             </div>
-
         </div>
 
         <div class="middle-box">
@@ -655,15 +656,13 @@
                 MEDIA PRACTICE 20-21では、出展中の映像作品の一部や修了制作展の展覧会カタログをWEB上にて公開しています。詳しくは下記リンクをご参照ください。
             </span></div>
 
-            <a href="https://vimeopro.com/user123237693/media-practice-20-21" target="brank">
-                <div class="onlinecontents-button-wrapper">
-                    <div class="onlinecontents-button">
-                        <div>映像作品公開中<br>
-                        （2021年1月末まで）
-                        </div>
+            <div class="onlinecontents-button-wrapper">
+                <div class="onlinecontents-button-fin">
+                    <div><span style="font-weight: 200; text-decoration: line-through;">映像作品公開中<br></span>
+                    (2021年1月末終了)
                     </div>
                 </div>
-            </a>
+            </div>
             <a href="pdf/MP20-21_catalog.pdf" target="brank">
                 <div class="onlinecontents-button-wrapper">
                     <div class="onlinecontents-button">
@@ -1157,7 +1156,7 @@
             <a class="js-modal-open" href="" data-target="tanaka">
                 <div class="artist-box" href="">
                     <div class="artist-name">田中彩｜Aya Tanaka</div>
-                    <div class="artist-picture"><img src="images/works/M1_6_tanaka/1_3.jpg"
+                    <div class="artist-picture"><img src="images/artist_thumbnails/tanaka.jpg"
                             style="margin-top: -20%;">
                     </div>
                 </div>
@@ -1167,7 +1166,7 @@
             <a class="js-modal-open" href="" data-target="nishimura">
                 <div class="artist-box" href="">
                     <div class="artist-name" style="color: #ffffff;">西村梨緒葉｜Rioha Nishimura</div>
-                    <div class="artist-picture"><img src="images/works/M1_7_nishimura/1_1.jpg"
+                    <div class="artist-picture"><img src="images/artist_thumbnails/nishimura.jpg"
                             style="margin-top: -25%;">
                     </div>
                 </div>

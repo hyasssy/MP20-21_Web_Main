@@ -46,6 +46,7 @@
   max-height: 100%;
 }
 
+
 /*ナビゲーション*/
 nav {
   position: fixed;
@@ -383,7 +384,28 @@ nav {
   color: white;
   align-items: center;
 }
+.onlinecontents-button-fin {
+  padding: 3rem 5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  /* background-color: rgb(82, 138, 199); */
+  background-color: #272727;
+  /* border: solid 0.5rem #FF475A; */
+  transition: 0.3s;
+  font-family: "HelveticaNeue", "HiraginoKG", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 0.65px;
+  line-height: 25px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  align-items: center;
+}
 .onlinecontents-button div{
+  font-weight: 500;
+}
+.onlinecontents-button-fin div{
   font-weight: 500;
 }
 .onlinecontents-button:hover {
@@ -572,6 +594,7 @@ nav {
   width: 100%;
   z-index: 999999;
   overflow: hidden;
+  /* overflow: scroll; */
 }
 .modal-bg {
   display: flex;
@@ -590,11 +613,14 @@ nav {
   position: relative;
   top: 5%;
   width: 80%;
-  height: 90%;
+  height: 90vh;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   box-shadow: 1rem 1rem #000000;
+  overflow: scroll;
   overflow-y: overlay; /*スクロールバーをオーバーレイする。webkit対応ブラウザのみ*/
+  scrollbar-width: thin;/*細さ*/
+  scrollbar-color: #000000 #ffffff;/*つまみの色 軌道の色*/
 }
 .modal-content .closebutton img {
   position: fixed;
